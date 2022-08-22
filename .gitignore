@@ -1,8 +1,9 @@
 /.idea
 /.vscode
 /.DS_Store
+/../.DS_Store
 /wp-content/.DS_Store
 /wp-content/themes/.DS_Store
 /wp-content/themes/ls_theme_defalut/.DS_Store
 /wp-content/themes/ls_theme_defalut/.idea
-/wp-content/themes/ls_theme_defalut/assets/.DS_Store
+/wp-content/themes/ls_theme_defalut/assets/.DS_Store.DS_Store
