@@ -114,7 +114,7 @@ global $ls_options;
         </div>
         <div class="header-logo">
             <div class="header-logo__page">
-                <a href="#"><img src="<?php echo $ls_options['logo']['url']; ?>" alt=""></a>
+                <a href="<?php echo home_url(); ?>"><img src="<?php echo $ls_options['logo']['url']; ?>" alt=""></a>
             </div>
         </div>
         <div class="header-main js-mobile-menu">

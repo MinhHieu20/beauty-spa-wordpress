@@ -418,7 +418,7 @@ get_header();
                     </div>
                 </div>
                 <div class="container-footer">
-                    <button class="btn-exception"><a href="<?php bloginfo('template_directory'); ?>/su-kien">Xem thêm</a></button>
+                    <button class="btn-exception"><a href="<?php echo home_url(); ?>/su-kien">Xem thêm</a></button>
                 </div>
             </div>
 
@@ -487,7 +487,7 @@ get_header();
 
                 </div>
                 <div class="container-footer">
-                    <button class="btn-exception">Xem thêm</button>
+                    <button class="btn-exception"><a href="<?php echo home_url(); ?>/uu-dai">Xem thêm</a></button>
                 </div>
             </div>
 

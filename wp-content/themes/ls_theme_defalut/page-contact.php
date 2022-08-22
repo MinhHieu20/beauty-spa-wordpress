@@ -5,6 +5,7 @@
  * @package ls_theme
  */
 get_header();
+global $ls_options;
 ?>
     <div class="content mt-10">
         <div class="contact-address">
@@ -12,7 +13,7 @@ get_header();
                 <div class="contact-address-item row">
                     <div class="contact-address-item__maps col l-6">
                         <iframe class="contact-address-item__maps--link"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.3096448802407!2d105.78607141485355!3d20.980221386024677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acce7369a367%3A0x68399d9c0d51d22c!2zMTMxIFRy4bqnbiBQaMO6LCBQLiBWxINuIFF1w6FuLCBIw6AgxJDDtG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1659606554575!5m2!1svi!2s"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3628481283035!2d106.6810527506547!3d10.783496661973436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2eb93b03b1%3A0x1c59a46f7764c421!2zMTMsIDkgS-G7syDEkOG7k25nLCBQaMaw4budbmcgOSwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCA3MDAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1661157115797!5m2!1svi!2s"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -23,42 +24,32 @@ get_header();
                                 LÀM ĐẸP HÀNG ĐẦU
                                 VIỆT NAM VỚI 50 CHI NHÁNH TRÊN TOÀN QUỐC
                             </h2>
-                            <p class="contact-address-item__form-contact--address--text">Hotline: 0999 999 999</p>
-                            <p class="contact-address-item__form-contact--address--text">Website: shynhbeauty.com.vn
-                            </p>
-                            <p class="contact-address-item__form-contact--address--text">Mail: info@shynhbeauty.com
-                            </p>
-
+                            <p class="contact-address-item__form-contact--address--text">Hotline: <?php echo $ls_options['hotline-1']; ?></p>
+                            <p class="contact-address-item__form-contact--address--text">Website: <?php echo $ls_options['web']; ?></p>
+                            <p class="contact-address-item__form-contact--address--text">Mail: <?php echo $ls_options['emailft-2']; ?></p>
                         </div>
                         <div class="contact-address-item__form-contact--group">
                             <h2 class="contact-address-item__form-contact--group--title">Liên hệ với chúng tôi</h2>
                             <div class="contact-address-item__form-contact--group--info">
-                                <input type="text" class="contact-address-item__form-contact--group--info__control"
-                                       placeholder="Họ tên">
+                                <input type="text" class="contact-address-item__form-contact--group--info__control" placeholder="Họ tên">
                             </div>
                             <div class="contact-address-item__form-contact--group--info">
-                                <input type="number"
-                                       class="contact-address-item__form-contact--group--info__control"
-                                       placeholder="Số điện thoại">
+                                <input type="number" class="contact-address-item__form-contact--group--info__control" placeholder="Số điện thoại">
                             </div>
                             <div class="contact-address-item__form-contact--group--info">
-                                <input type="email" class="contact-address-item__form-contact--group--info__control"
-                                       placeholder="Email">
+                                <input type="email" class="contact-address-item__form-contact--group--info__control" placeholder="Email">
                             </div>
                             <div class="contact-address-item__form-contact--group--info">
-                                    <textarea name="" class="contact-address-item__form-contact--group--info__textarea"
-                                              placeholder="Lời nhắn" id="" cols="30" rows="10"></textarea>
+                                <textarea name="" class="contact-address-item__form-contact--group--info__textarea" placeholder="Lời nhắn" id="" cols="30" rows="10"></textarea>
                             </div>
                             <div class="contact-address-item__form-contact--group--info">
-                                <button class="contact-address-item__form-contact--group--info__button">Gửi
-                                    ngay</button>
+                                <button class="contact-address-item__form-contact--group--info__button">Gửi ngay</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="advise-contact none-mobile">
             <div class="advise-contact__body grid wide">
                 <div class="contact-body row">
@@ -68,7 +59,7 @@ get_header();
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
                             <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name">1900 0000 00</div>
+                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
                             <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm
                                 24/7</div>
                         </div>

@@ -102,7 +102,7 @@ get_header();
 
                         <div class="service--detailing__item form-contact">
                             <div class="service--detailing__item--logo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/footerImg.png" alt="">
+                                <img src="<?php echo $ls_options['logo']['url']; ?>" alt="">
                             </div>
                             <div class="service--detailing__item--heading col l-9">
                                 Để lại số điện thoại để được các
