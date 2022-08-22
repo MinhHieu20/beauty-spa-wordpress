@@ -20,8 +20,8 @@ global $ls_options;
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/sass/main.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/slider.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/slider.css">
 	<?php wp_head(); ?>
 </head>
 

@@ -1346,8 +1346,8 @@ global $ls_options;
 </div>
 </div><!-- #page -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/swiper-bundle.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/swiper-bundle.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <!--<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <?php wp_footer(); ?>
