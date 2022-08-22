@@ -206,7 +206,7 @@ function willgroup_init_beauty() {
 add_action('init', 'willgroup_init_beauty');
 
 function willgroup_init_event() {
-    register_post_type('beauty',
+    register_post_type('event',
         array(
 
         )
