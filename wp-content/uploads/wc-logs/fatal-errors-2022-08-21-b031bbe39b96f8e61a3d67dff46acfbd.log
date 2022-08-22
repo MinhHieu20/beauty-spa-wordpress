@@ -1,0 +1,10 @@
+2022-08-21T13:48:45+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in /Applications/MAMP/htdocs/beauty-spa/wp-content/themes/ls_theme_defalut/index.php:110
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/beauty-spa/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty-spa/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa/wp-content/themes/ls_theme_defalut/index.php on line 110
+
+2022-08-21T14:12:11+00:00 CRITICAL syntax error, unexpected '}' in /Applications/MAMP/htdocs/beauty-spa/wp-content/themes/ls_theme_defalut/index.php on line 112
+
