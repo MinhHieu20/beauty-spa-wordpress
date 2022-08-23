@@ -180,6 +180,7 @@ function willgroup_init_beauty() {
             ) ,
         )
     );
+    flush_rewrite_rules();
     register_taxonomy('beauty_cat', array('beauty') ,
         array(
             'labels' => array(
@@ -206,7 +207,7 @@ function willgroup_init_beauty() {
 add_action('init', 'willgroup_init_beauty');
 
 function willgroup_init_event_spa() {
-    register_post_type('event-spa',
+    register_post_type('event_spa',
         array(
             'labels' => array(
                 'name'            => __('Sự kiện Spa', 'LeadSoft') ,
@@ -234,7 +235,8 @@ function willgroup_init_event_spa() {
             ),
         )
     );
-    register_taxonomy('event_cat_spa', array('event-spa') ,
+    flush_rewrite_rules();
+    register_taxonomy('event_cat_spa', array('event_spa') ,
         array(
             'labels' => array(
                 'name'              => __('Phân Loại sự kiện Spa', 'LeadSoft') ,
@@ -288,6 +290,7 @@ function willgroup_init_tip_beauty() {
             ),
         )
     );
+    flush_rewrite_rules();
     register_taxonomy('tip_beauty_cat', array('tip-beauty') ,
         array(
             'labels' => array(
@@ -312,6 +315,131 @@ function willgroup_init_tip_beauty() {
     );
 }
 add_action('init', 'willgroup_init_tip_beauty');
+
+function willgroup_init_extension_spa() {
+    register_post_type('extension',
+        array(
+            'labels' => array(
+                'name'            => __('Chi nhánh Spa', 'LeadSoft') ,
+                'singular_name'   => __('Chi nhánh Spa', 'LeadSoft') ,
+                'menu_name'       => __('Chi nhánh Spa', 'LeadSoft') ,
+                'name_admin_bar'  => __('Chi nhánh Spa', 'LeadSoft') ,
+                'all_items'       => __('Tất cả Chi nhánh Spa', 'LeadSoft') ,
+                'add_new'         => __('Thêm Chi nhánh Spa', 'LeadSoft') ,
+                'add_new_item'    => __('Thêm Chi nhánh Spa', 'LeadSoft') ,
+                'edit_item'       => __('Sửa Chi nhánh Spa', 'LeadSoft') ,
+            ),
+            'description'     => __('Chi nhánh Spa', 'LeadSoft') ,
+            'menu_position'   => 5,
+            'menu_icon'       => 'dashicons-admin-multisite',
+            'capability_type' => 'post',
+            'public'          => true,
+            'has_archive'     => 'chi-nhanh-spa',
+            'supports'        => array(
+                'title',
+                'thumbnail',
+                'editor',
+            ),
+            'rewrite'  => array(
+                'slug' => 'chi-nhanh-spa'
+            ),
+        )
+    );
+    flush_rewrite_rules();
+    register_taxonomy('extension_cat', array('extension') ,
+        array(
+            'labels' => array(
+                'name'              => __('Phân Loại Chi nhánh Spa', 'LeadSoft') ,
+                'singular_name'     => __('Phân Loại Chi nhánh Spa', 'LeadSoft') ,
+                'search_items'      => __('Tìm kiếm loại Chi nhánh Spa', 'LeadSoft') ,
+                'all_items'         => __('Tất cả loại Chi nhánh Spa', 'LeadSoft') ,
+                'parent_item'       => __('Danh mục Chi nhánh Spa cha', 'LeadSoft') ,
+                'parent_item_colon' => __('Danh mục Chi nhánh Spa cha:', 'LeadSoft') ,
+                'edit_item'         => __('Sửa Danh mục Chi nhánh Spa', 'LeadSoft') ,
+                'update_item'       => __('Cập nhật Danh mục Chi nhánh Spa', 'LeadSoft') ,
+                'add_new_item'      => __('Thêm Danh mục Chi nhánh Spa', 'LeadSoft') ,
+                'new_item_name'     => __('Tên Danh mục Chi nhánh Spa', 'LeadSoft') ,
+                'menu_name'         => __('Danh mục Chi nhánh Spa', 'LeadSoft') ,
+            ),
+            'hierarchical' => true,
+            'public'       => true,
+            'rewrite'      => array(
+                'slug'     => 'loai-chi-nhanh-spa'
+            ),
+        )
+    );
+}
+add_action('init', 'willgroup_init_extension_spa');
+
+function willgroup_init_promotion() {
+    register_post_type('promotion',
+        array(
+            'labels' => array(
+                'name'            => __('Chính sách ưu đãi', 'LeadSoft') ,
+                'singular_name'   => __('Chính sách ưu đãi', 'LeadSoft') ,
+                'menu_name'       => __('Chính sách ưu đãi', 'LeadSoft') ,
+                'name_admin_bar'  => __('Chính sách ưu đãi', 'LeadSoft') ,
+                'all_items'       => __('Tất cả Chính sách ưu đãi', 'LeadSoft') ,
+                'add_new'         => __('Thêm Chính sách ưu đãi', 'LeadSoft') ,
+                'add_new_item'    => __('Thêm Chính sách ưu đãi', 'LeadSoft') ,
+                'edit_item'       => __('Sửa Chính sách ưu đãi', 'LeadSoft') ,
+            ),
+            'description'     => __('Chính sách ưu đãi', 'LeadSoft') ,
+            'menu_position'   => 5,
+            'menu_icon'       => 'dashicons-admin-multisite',
+            'capability_type' => 'post',
+            'public'          => true,
+            'has_archive'     => 'chinh-sach-uu-dai',
+            'supports'        => array(
+                'title',
+                'thumbnail',
+                'editor',
+            ),
+            'rewrite'  => array(
+                'slug' => 'chinh-sach-uu-dai'
+            ),
+        )
+    );
+    flush_rewrite_rules();
+    register_taxonomy('promotion_cat', array('promotion') ,
+        array(
+            'labels' => array(
+                'name'              => __('Phân Loại Chính sách ưu đãi', 'LeadSoft') ,
+                'singular_name'     => __('Phân Loại Chính sách ưu đãi', 'LeadSoft') ,
+                'search_items'      => __('Tìm kiếm loại Chính sách ưu đãi', 'LeadSoft') ,
+                'all_items'         => __('Tất cả loại Chính sách ưu đãi', 'LeadSoft') ,
+                'parent_item'       => __('Danh mục Chính sách ưu đãi cha', 'LeadSoft') ,
+                'parent_item_colon' => __('Danh mục Chính sách ưu đãi cha:', 'LeadSoft') ,
+                'edit_item'         => __('Sửa Danh mục Chính sách ưu đãi', 'LeadSoft') ,
+                'update_item'       => __('Cập nhật Danh mục Chính sách ưu đãi', 'LeadSoft') ,
+                'add_new_item'      => __('Thêm Danh mục Chính sách ưu đãi', 'LeadSoft') ,
+                'new_item_name'     => __('Tên Danh mục Chính sách ưu đãi', 'LeadSoft') ,
+                'menu_name'         => __('Danh mục Chính sách ưu đãi', 'LeadSoft') ,
+            ),
+            'hierarchical' => true,
+            'public'       => true,
+            'rewrite'      => array(
+                'slug'     => 'loai-chinh-sach-uu-dai'
+            ),
+        )
+    );
+}
+add_action('init', 'willgroup_init_promotion');
+
+/**
+ * Truncate text.
+ */
+// echo truncate( get_the_content(), 200 );
+function truncate( $text, $chars = 400 ) {
+    $text = strip_tags( $text );
+    if ( strlen( $text ) > $chars ) {
+        $text = $text." ";
+        $text = substr($text,0,$chars);
+        $text = substr($text,0,strrpos($text,' '));
+        $text = $text."...";
+    }
+    return $text;
+}
 
 function add_additional_class_on_li($classes, $item, $args) {
     if(isset($args->add_li_class)) {

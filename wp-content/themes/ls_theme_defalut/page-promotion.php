@@ -5,6 +5,7 @@
  * @package ls_theme
  */
 get_header();
+global $post, $ls_options;
 ?>
     <div class="content">
         <div class="promotion">
@@ -12,91 +13,33 @@ get_header();
             <div class="promotion--container">
                 <div class="promotion--container--body grid wide">
                     <div class="promotion--container--body__list row">
+                        <?php
+                        $args = array(
+                            'post_type' => 'promotion',
+                            'post_status' => 'publish',
+                            'posts_per_page' => 6,
+                        );
+                        $count = 0;
+                        $loop = new WP_Query( $args );
+                        while ( $loop->have_posts() ) : $loop->the_post();
+                            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                        ?>
                         <div class="promotion--container--body__list--item col l-5 col-md-12">
                             <div class="promotion--container--body__list--item--content row">
                                 <div class="promotion--container--body__list--item--content--images col l-5">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/sale/sale1.png" alt="">
+                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $image[0]; ?>" alt=""></a>
                                 </div>
                                 <div class="promotion--container--body__list--item--content--text col l-7">
-                                    <h1 class="promotion--container--body__list--item--content--text--title">Mừng
-                                        ngày gia đình việt nam shynh beauty spa tặng ưu đãi cho cả gia đình</h1>
-                                    <p class="promotion--container--body__list--item--content--text--desc">Nhân ngày
-                                        Gia Đình Việt Nam 28/06, Shynh Beauty Spa chúc cả nhà ta lúc nào cũng tràn
-                                        ngập tiếng cười, vui vẻ, lạc quan bên nhau và gia đình ta luôn hạnh phúc.
-                                    </p>
+                                    <h1 class="promotion--container--body__list--item--content--text--title"><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h1>
+                                    <p class="promotion--container--body__list--item--content--text--desc"><a href="<?php the_permalink(); ?>"><?php echo get_the_content(); ?></a></p>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="promotion--container--body__list--item col l-5 col-md-12">
-                            <div class="promotion--container--body__list--item--content row">
-                                <div class="promotion--container--body__list--item--content--images col l-5">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/event/event3.png" alt="">
-                                </div>
-                                <div class="promotion--container--body__list--item--content--text col l-7">
-                                    <h1 class="promotion--container--body__list--item--content--text--title">đăng ký
-                                        thành viên vip cơ hội trúng xe sh</h1>
-                                    <p class="promotion--container--body__list--item--content--text--desc">Đăng ký
-                                        thành viên để tận hưởng những ưu đãi đồng thời có cơ hội ...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promotion--container--body__list--item col l-5 col-md-12">
-                            <div class="promotion--container--body__list--item--content row">
-                                <div class="promotion--container--body__list--item--content--images col l-5">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/sale/sale2.png" alt="">
-                                </div>
-                                <div class="promotion--container--body__list--item--content--text col l-7">
-                                    <h1 class="promotion--container--body__list--item--content--text--title">mừng
-                                        quốc tế thiếu nhi shynh beauty spa tặng bạn làn da em bé</h1>
-                                    <p class="promotion--container--body__list--item--content--text--desc">Là phụ
-                                        nữ, chị em nào cũng ao ước có một làn da mịn màng như da em bé. Để giữ gìn
-                                        làn da, chống lại sự lão hóa và mang đến sự hài lòng cho chị em, Shynh
-                                        Beauty Spa dành tặng những ưu đãi làm đẹp.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promotion--container--body__list--item col l-5 col-md-12">
-                            <div class="promotion--container--body__list--item--content row">
-                                <div class="promotion--container--body__list--item--content--images col l-5">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/event/event7.png" alt="">
-                                </div>
-                                <div class="promotion--container--body__list--item--content--text col l-7">
-                                    <h1 class="promotion--container--body__list--item--content--text--title">làm đẹp
-                                        thả ga - rinh xe về nhà</h1>
-                                    <p class="promotion--container--body__list--item--content--text--desc">Chỉ còn
-                                        chưa đầy 10 ngày nữa Shynh Beauty Spa sẽ tổ chức bốc thăm trúng thưởng Xe
-                                        VISION rồi, nếu chưa tham gia thì tham gia ngay chị em nhé !</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promotion--container--body__list--item col l-5 col-md-12">
-                            <div class="promotion--container--body__list--item--content row">
-                                <div class="promotion--container--body__list--item--content--images col l-5">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/event/event8.png" alt="">
-                                </div>
-                                <div class="promotion--container--body__list--item--content--text col l-7">
-                                    <h1 class="promotion--container--body__list--item--content--text--title">làm đẹp
-                                        thả ga nhận ngay quà lớn</h1>
-                                    <p class="promotion--container--body__list--item--content--text--desc">CHỈ TRONG
-                                        THÁNG 4, để TRI ÂN và TÀI TRỢ thêm nhiều suất làm đẹp cho Quý khách hàng
-                                        Shynh Beauty Spa tung LOẠT ƯU ĐÃI ĐỈNH NHẤT trong suốt 3 năm qua.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promotion--container--body__list--item col l-5 col-md-12">
-                            <div class="promotion--container--body__list--item--content row">
-                                <div class="promotion--container--body__list--item--content--images col l-5">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/event/event9.png" alt="">
-                                </div>
-                                <div class="promotion--container--body__list--item--content--text col l-7">
-                                    <h1 class="promotion--container--body__list--item--content--text--title">trọn
-                                        gói gội đầu thư giãn + trẻ hóa vùng mắt chỉ còn 119k</h1>
-                                    <p class="promotion--container--body__list--item--content--text--desc">Trọn gói
-                                        Gội đầu thư giãn + Trẻ hóa vùng mắt chỉ còn 119k</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                        endwhile;
+                        wp_reset_postdata();
+                        ?>
                     </div>
                 </div>
             </div>

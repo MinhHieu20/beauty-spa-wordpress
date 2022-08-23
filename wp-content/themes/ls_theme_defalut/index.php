@@ -11,8 +11,7 @@
  *
  * @package ls_theme_defalut
  */
-global $ls_options;
-global $post;
+global $ls_options, $post;
 get_header();
 ?>
 <div class="content">
@@ -369,52 +368,43 @@ get_header();
                     <h2 class="container-item-title">Sự kiện</h2>
 
                 </div>
-                <div class="container-body ">
+                <div class="container-body">
                     <div class="event-list">
+                        <?php
+                            $args = array(
+                                'post_type' => 'event-spa',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 3,
+                            );
+                            $count = 0;
+                            $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post();
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                        ?>
                         <div class="event-item col-lg-3 col-sm-12">
-                            <div class="event-item-image image-pseudo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/event/0A1A0293.jpg" alt="" class="event-image">
+                            <?php
+                                if ($count == 2) {
+                            ?>
+                                <div class="event-item-image">
+                            <?php
+                                } else {
+                            ?>
+                                <div class="event-item-image image-pseudo">
+                            <?php
+                            }
+                            ?>
+                                <img src="<?php echo $image[0]; ?>" alt="" class="event-image">
                             </div>
                             <div class="event-item-text ">
-
-                                <h2 class="event-title">Khai trương SHYNH spa chi nhánh quận 2</h2>
-                                <p class="event-desc">Cơ
-                                    sở mới của SHYNH SPA
-                                    được mở rộng hoàn
-                                    toàn mới tại địa chỉ
-                                    mới ...</p>
+                                <h2 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h2>
+                                <p class="event-desc"><?php echo get_the_content(); ?></p>
                             </div>
                         </div>
-                        <div class="event-item col-lg-3 col-sm-12">
-                            <div class="event-item-image image-pseudo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/event/event2.png" alt="" class="event-image">
-                            </div>
-                            <div class="event-item-text">
-                                <h2 class="event-title">Ngày
-                                    của mẹ-tặng mẹ combo
-                                    tận hưởng 699k</h2>
-                                <p class="event-desc">Cảm
-                                    ơn mẹ đã luôn hi
-                                    sinh, lo lắng cho
-                                    con suốt những năm
-                                    tháng qua...</p>
-                            </div>
-                        </div>
-                        <div class="event-item col-lg-3 col-sm-12">
-                            <div class="event-item-image image-pseudo-mobile">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/event/event3.png" alt="" class="event-image">
-                            </div>
-                            <div class="event-item-text">
-                                <h2 class="event-title">đăng
-                                    ký thành viên vip cơ
-                                    hội trúng xe sh</h2>
-                                <p class="event-desc">Đăng
-                                    ký thành viên để tận
-                                    hưởng những ưu đãi
-                                    đồng thời có cơ hội
-                                    ....</p>
-                            </div>
-                        </div>
+                        <?php
+                            $count++;
+                            endwhile;
+                            wp_reset_postdata();
+                        ?>
                     </div>
                 </div>
                 <div class="container-footer">
@@ -437,54 +427,42 @@ get_header();
 
                 <div class="container-body ">
                     <div class="event-list">
+                        <?php
+                            $args = array(
+                                'post_type' => 'promotion',
+                                'post_status' => 'publish',
+                                'posts_per_page' => 3,
+                            );
+                            $count = 0;
+                            $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post();
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                        ?>
                         <div class="event-item col-lg-3 col-sm-12">
+                        <?php
+                            if ($count == 2) {
+                        ?>
+                            <div class="event-item-image">
+                        <?php
+                        } else {
+                        ?>
                             <div class="event-item-image image-pseudo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/sale/sale1.png" alt="" class="event-image">
+                        <?php
+                        }
+                        ?>
+                            <img src="<?php echo $image[0]; ?>" alt="" class="event-image">
                             </div>
-                            <div class="event-item-text">
-                                <h2 class="event-title">Khai
-                                    trương SHYNH spa chi
-                                    nhánh quận 2</h2>
-
-                                <p class="event-desc">Cơ
-                                    sở mới của SHYNH SPA
-                                    được mở rộng hoàn
-                                    toàn mới tại địa chỉ
-                                    mới ...</p>
+                            <div class="event-item-text ">
+                                <h2 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h2>
+                                <p class="event-desc"><?php echo get_the_content(); ?></p>
                             </div>
                         </div>
-                        <div class="event-item col-lg-3 col-sm-12">
-                            <div class="event-item-image image-pseudo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/sale/sale2.png" alt="" class="event-image">
-                            </div>
-                            <div class="event-item-text">
-                                <h2 class="event-title">Ngày
-                                    của mẹ-tặng mẹ combo
-                                    tận hưởng 699k</h2>
-                                <p class="event-desc">Cảm
-                                    ơn mẹ đã luôn hi
-                                    sinh, lo lắng cho
-                                    con suốt những năm
-                                    tháng qua...</p>
-                            </div>
-                        </div>
-                        <div class="event-item col-lg-3 col-sm-12">
-                            <div class="event-item-image image-pseudo-mobile">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/sale/sale3.png" alt="" class="event-image">
-                            </div>
-                            <div class="event-item-text">
-                                <h2 class="event-title">đăng
-                                    ký thành viên vip cơ
-                                    hội trúng xe sh</h2>
-                                <p class="event-desc">Đăng
-                                    ký thành viên để tận
-                                    hưởng những ưu đãi
-                                    đồng thời có cơ hội
-                                    ....</p>
-                            </div>
-                        </div>
+                        <?php
+                            $count++;
+                            endwhile;
+                        wp_reset_postdata();
+                        ?>
                     </div>
-
                 </div>
                 <div class="container-footer">
                     <button class="btn-exception"><a href="<?php echo home_url(); ?>/uu-dai">Xem thêm</a></button>

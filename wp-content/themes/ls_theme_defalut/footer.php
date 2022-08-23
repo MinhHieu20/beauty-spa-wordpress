@@ -101,32 +101,26 @@ global $ls_options;
             </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <div class="container footer-width">
-            <div class="row">
-            <div class="footer-bottom-left  col-xl-6 col-md-6">
-                <h3 class="footer-title">SHYNH BEAUTY
-                    SPA - Dẫn đầu trị mụn uy tín số 1 Việt Nam</h3>
-                <div class="footer-contact">
-                    <ul class="footer-contact-list">
-                        <li class="footer-contact-list__item">
-                            <a class="footer-contact-list__item--link fz16" href="">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
-                        </li>
-                        <li class="footer-contact-list__item">
-                            <a class="footer-contact-list__item--link fz16" href="">Website: <?php echo $ls_options['web']; ?></a>
-                        </li>
-                        <li class="footer-contact-list__item">
-                            <a class="footer-contact-list__item--link fz16" href="">Mail: <?php echo $ls_options['emailft-2']; ?></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom-right col-xl-6 col-md-6">
-                Giấy phép kinh doanh tại TP.Hồ Chí Minh
+    <div class="footer-bottom dp-none">
+        <div class="footer-width">
+            <h3 class="footer-title">SHYNH BEAUTY SPA - Thẩm mỹ viện hàng đầu việt nam với 50 chi nhánh trên
+                toàn quốc</h3>
+            <div class="footer-contact">
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-list__item">
+                        <a class="footer-contact-list__item--link fz16" href="">Hotline: 0999 999 999</a>
+                    </li>
+                    <li class="footer-contact-list__item">
+                        <a class="footer-contact-list__item--link fz16" href="">Website: shynhbeauty.com.vn</a>
+                    </li>
+                    <li class="footer-contact-list__item">
+                        <a class="footer-contact-list__item--link fz16" href="">Mail:info@shynhbeauty.com</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="footer-bottom-mobile">
+    <div class="footer-bottom-mobile dp-block dp-noneTL">
         <div class="row">
             <div class="footer-bottom-mobile__image">
                 <img src="<?php bloginfo('template_directory'); ?>/images/footer/mobile/BgBoxshow.png" alt="">
@@ -1237,7 +1231,7 @@ global $ls_options;
 <div class="form--register hide" id="open-form">
     <div class="form--contact__inner contact_inner-mobile">
         <div class="form--contact__inner--logo">
-            <img src="./images/footerImg.png" alt="" class="form--contact__inner--logo--image">
+            <img src="<?php bloginfo('template_directory'); ?>/images/footerImg.png" alt="" class="form--contact__inner--logo--image">
         </div>
         <div class="form--contact__inner--contact">
             <form action="">
@@ -1285,7 +1279,6 @@ global $ls_options;
                         class="phone-number">0909
                             999 999</span> để được tư vấn nhanh nhất</p>
         </div>
-
     </div>
     <div class="form--contact__inner--extend contact_inner-mobile--extend">
         <ul class="form--contact__inner--extend--list">

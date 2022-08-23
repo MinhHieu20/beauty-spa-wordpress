@@ -1,0 +1,96 @@
+2022-08-23T03:30:37+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/index.php:383
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/index.php on line 383
+
+2022-08-23T08:27:15+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_field() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/single-promotion.php:21
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/single-promotion.php on line 21
+
+2022-08-23T08:27:25+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_field() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/single-promotion.php:21
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/themes/ls_theme_defalut/single-promotion.php on line 21
+
+2022-08-23T09:02:04+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
+2022-08-23T09:02:18+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
+2022-08-23T09:02:28+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
+2022-08-23T09:02:45+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
+2022-08-23T09:03:01+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
+2022-08-23T09:03:11+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
+2022-08-23T09:41:57+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
+2022-08-23T09:42:10+00:00 CRITICAL Uncaught Error: Call to undefined method ACF_Ajax_Check_Screen::verify_request() in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php:116
+Stack trace:
+#0 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(307): acfe_field_group_hide_on_screen->ajax_check_screen('')
+#1 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#2 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_acf/aja...')
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/beauty-spa-wordpress/wp-content/plugins/acf-extended/includes/field-groups/field-group-hide-on-screen.php on line 116
+
