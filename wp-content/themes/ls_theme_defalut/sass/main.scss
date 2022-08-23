@@ -481,8 +481,6 @@
         .contact-body {
             .contact-body__left {
                 .contact-body__column {
-                    background-image: url('../images/contact/_Path_.png');
-                    @include backgroundImage();
                     width: 37.6rem;
                     height: 26.5rem;
                     margin: 1.5rem 0;
@@ -509,7 +507,7 @@
 
                     .contact__name {
                         font-family: Gilroy-Heavy;
-                        font-size: 4.4rem;
+                        font-size: 2.8rem;
                         padding: 1.5rem 0;
                         line-height: 3.6rem;
                     }

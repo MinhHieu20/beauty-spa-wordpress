@@ -7188,6 +7188,7 @@ a:hover {
   }
   .system-introduction .introduction-image .introduction-image-1 {
     height: 60rem;
+    width: 64.5%;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -7265,8 +7266,14 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
   }
+  .event .container-item .container-body .event-list .event-item .event-item-image {
+    height: 27.7rem;
+  }
   .event .container-item .container-body .event-list .event-item .event-item-image .event-image {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 2rem;
   }
   .event .container-item .container-body .event-list .event-item .image-pseudo::after {
     border-right: 2px solid #000000;
@@ -10683,8 +10690,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 37.6rem;
   height: 26.5rem;
   margin: 1.5rem 0;
@@ -10708,7 +10714,7 @@ a:hover {
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__left .contact-body__column .contact__name {
   font-family: Gilroy-Heavy;
-  font-size: 4.4rem;
+  font-size: 2.8rem;
   padding: 1.5rem 0;
   line-height: 3.6rem;
 }

@@ -124,7 +124,6 @@ global $ls_options;
             <div class="footer-bottom-right col-xl-6 col-md-6">
                 Giấy phép kinh doanh tại TP.Hồ Chí Minh
             </div>
-            </div>
         </div>
     </div>
     <div class="footer-bottom-mobile">
