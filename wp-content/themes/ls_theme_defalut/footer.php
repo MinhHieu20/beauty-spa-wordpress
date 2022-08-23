@@ -102,25 +102,6 @@ global $ls_options;
             </div>
         </div>
     </div>
-    <div class="footer-bottom dp-none">
-        <div class="footer-width">
-            <h3 class="footer-title">SHYNH BEAUTY SPA - Thẩm mỹ viện hàng đầu việt nam với 50 chi nhánh trên
-                toàn quốc</h3>
-            <div class="footer-contact">
-                <ul class="footer-contact-list">
-                    <li class="footer-contact-list__item">
-                        <a class="footer-contact-list__item--link fz16" href="">Hotline: 0999 999 999</a>
-                    </li>
-                    <li class="footer-contact-list__item">
-                        <a class="footer-contact-list__item--link fz16" href="">Website: shynhbeauty.com.vn</a>
-                    </li>
-                    <li class="footer-contact-list__item">
-                        <a class="footer-contact-list__item--link fz16" href="">Mail:info@shynhbeauty.com</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="footer-bottom">
         <div class="container footer-width">
             <div class="row">
