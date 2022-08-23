@@ -50,6 +50,7 @@ global $ls_options;
                         <div class="footer-top-contact__tel">
                             <h3 class="contact-title"> HOTLINE </h3>
                             <a href="#"><?php echo $ls_options['hotline-1']; ?> - <?php echo $ls_options['hotline-2']; ?></a>
+                            <a href="">1900 989 800 (BẤM PHÍM 2) </a>
                         </div>
                         <div class="footer-top-contact__info">
                             <h3 class="contact-title"> Thông tin liên hệ
@@ -111,6 +112,7 @@ global $ls_options;
                     <ul class="footer-contact-list">
                         <li class="footer-contact-list__item">
                             <a class="footer-contact-list__item--link fz16" href="">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
+                            <a class="footer-contact-list__item--link fz16" href=""> 1900 989 800 (BẤM PHÍM 2)</a>
                         </li>
                         <li class="footer-contact-list__item">
                             <a class="footer-contact-list__item--link fz16" href="">Website: <?php echo $ls_options['web']; ?></a>

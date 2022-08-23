@@ -87,6 +87,8 @@ get_header();
 
         </div>
         <div class="top-banner-3">
+            <h3 class="banner-title">ĐỘI NGŨ CHUYÊN GIA NHIỀU NĂM KINH NGHIỆM,
+                LÊN PHÁC ĐỒ CHUYÊN BIỆT CHO TỪNG LÀN DA</h3>
         </div>
         <div class="content-container treatment-result index-result background-mobile">
             <div class="container-item grid wide">
