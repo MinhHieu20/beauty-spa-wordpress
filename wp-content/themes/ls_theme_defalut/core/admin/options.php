@@ -53,13 +53,13 @@
                                 array(
                                     'id'       => 'emailft-1',
                                     'type'     => 'text',
-                                    'title'    => __( 'Nhập địa chỉ mail thứ nhất', 'LeadSoft' ),
+                                    'title'    => __( 'Nhập địa chỉ email thứ nhất', 'LeadSoft' ),
                                     'compiler' => 'true',
                                 ),
                                 array(
                                     'id'       => 'emailft-2',
                                     'type'     => 'text',
-                                    'title'    => __( 'Nhập địa chỉ mail thứ hai', 'LeadSoft' ),
+                                    'title'    => __( 'Nhập địa chỉ email thứ hai', 'LeadSoft' ),
                                     'compiler' => 'true',
                                 ),
                                 array(
@@ -182,7 +182,6 @@
                                 )
                             ),
                             array(
-
                                 'id'       => 'hidemenu',
                                 'type'     => 'switch',
                                 'title'    => __('Ẩn thanh điều kiển', 'LeadSoft'),
@@ -215,67 +214,17 @@
                         ),)
                 );
                 $this->sections[] = array(
-                    'title'      => __( 'Banner Top Sale', 'LeadSoft' ),
-                    'id'         => 'slide-commercial',
-                    'subsection' => true,
-                    'fields'     => array(
-                        array(
-                            'id'         => 'slide-top-sale',
-                            'type'       => 'slides',
-                            'title'      => __('Photo list', 'LeadSoft'),
-                        ),)
+                    'title'  => __( 'Khách hàng nói về chúng tôi', 'LeadSoft' ),
+                    'desc'   => __( 'Khách hàng nói về chúng tôi', 'LeadSoft' ),
+                    'icon' => 'el el-home',
                 );
                 $this->sections[] = array(
-                    'title'      => __( 'Banner Sport Skin', 'LeadSoft' ),
-                    'id'         => 'banner-sport-skin',
+                    'title'      => __( 'Khách hàng nói về chúng tôi', 'LeadSoft' ),
+                    'id'         => 'feedback-customer',
                     'subsection' => true,
                     'fields'     => array(
                         array(
-                            'id'         => 'banner-sport',
-                            'type'       => 'media',
-                            'title'      => __('Photo list', 'LeadSoft'),
-                        ),)
-                );
-                $this->sections[] = array(
-                    'title'      => __( 'Banner Maxi Dresses', 'LeadSoft' ),
-                    'id'         => 'perfume-cat',
-                    'subsection' => true,
-                    'fields'     => array(
-                        array(
-                            'id'         => 'maxi-dress',
-                            'type'       => 'slides',
-                            'title'      => __('Photo list', 'LeadSoft'),
-                        ),)
-                );
-                $this->sections[] = array(
-                    'title'      => __( 'Banner Swim Suits', 'LeadSoft' ),
-                    'id'         => 'perfume-news',
-                    'subsection' => true,
-                    'fields'     => array(
-                        array(
-                            'id'         => 'swim-suits',
-                            'type'       => 'slides',
-                            'title'      => __('Photo list', 'LeadSoft'),
-                        ),)
-                );
-                $this->sections[] = array(
-                    'title'      => __( 'New Fits', 'LeadSoft' ),
-                    'id'         => 'new-fit',
-                    'subsection' => true,
-                    'fields'     => array(
-                        array(
-                            'id'         => 'new-fit',
-                            'type'       => 'slides',
-                            'title'      => __('Photo list', 'LeadSoft'),
-                        ),)
-                );
-                $this->sections[] = array(
-                    'title'      => __( 'Top Brand', 'LeadSoft' ),
-                    'id'         => 'top-brand',
-                    'subsection' => true,
-                    'fields'     => array(
-                        array(
-                            'id'         => 'top-brand',
+                            'id'         => 'feedback-customer',
                             'type'       => 'slides',
                             'title'      => __('Photo list', 'LeadSoft'),
                         ),)

@@ -5,6 +5,7 @@
  * @package ls_theme
  */
 get_header();
+global $ls_options;
 ?>
     <div class="main">
         <div class="main-logo">
@@ -29,27 +30,22 @@ get_header();
                                                 Shynh Beauty Spa luôn nỗ lực với khát khao “Đánh thức vẻ đẹp tiềm
                                                 ẩn” cho khách hàng. Thương hiệu không ngừng phát triển mạnh mẽ, mở
                                                 rộng quy mô với hơn 50 chi nhánh trong và ngoài nước, góp phần đưa
-                                                dịch vụ chăm sóc sắc đẹp Việt Nam nâng tầm Thế giới.
-                                            </li>
-                                            <li class="main-content-left__list--item">
+                                                dịch vụ chăm sóc sắc đẹp Việt Nam nâng tầm Thế giới.<br><br>
                                                 Shynh Beauty Spa luôn đón đầu những xu hướng hiện đại, đem đến cho
                                                 khách hàng những dịch vụ làm đẹp & thẩm mỹ hoàn hảo nhất. Bên cạnh
                                                 đó, Shynh Beauty Spa thường xuyên chiêu mộ nhân tài, đào tạo phát
                                                 triển đội ngũ từ bác sĩ đến kỹ thuật viên, đảm bảo liên tục cập nhật
                                                 kiến thức mới nâng cao kỹ năng chuyên môn và kỹ năng mềm nhằm mang
-                                                đến cho khách hàng những trải nghiệm dịch vụ tốt.
-                                            </li>
-                                            <li class="main-content-left__list--item">
+                                                đến cho khách hàng những trải nghiệm dịch vụ tốt.<br><br>
                                                 Thước đo sự thành công lớn nhất của chúng tôi là nụ cười hài lòng,
                                                 sự tin tưởng tuyệt đối của khách hàng. Hệ thống Shynh Beauty Spa
                                                 nhận được đánh giá tốt từ hàng triệu khách hàng trong và ngoài nước.
                                                 Rất đông người nổi tiếng, các doanh nhân đã gửi trọn “nhan sắc” để
-                                                Shynh Beauty Spa chăm chút.
-                                            </li>
-                                            <li class="main-content-left__list--item">
+                                                Shynh Beauty Spa chăm chút.<br><br>
                                                 Shynh Beauty Spa đã vươn mình trở thành một hệ thống Thẩm mỹ viện
                                                 hàng đầu Việt Nam với hơn 50 chi nhánh ôm trọn hình chữ S Việt Nam,
-                                                được đông đảo khách hàng tin tưởng đồng hành, lựa chọn.
+                                                được đông đảo khách hàng tin tưởng đồng hành, lựa chọn.<br><br>
+                                                <?php //the_content(); ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -317,21 +313,13 @@ get_header();
                 <h2 class="main-papers-content__heading text-center">Báo chí nói gì về Shynh Beauty spa</h2>
                 <div class="main-papers-content__image">
                     <ul class="main-papers-content__image--list d-flex">
+                        <?php $i = 0; ?>
+                        <?php foreach($ls_options['feedback-customer'] as $slide) : ?>
                         <li class="main-papers-content__image--list-item">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/about/img-1.png" alt="">
+                            <a href="<?php echo $slide['url']; ?>"><img src="<?php echo $slide['image']; ?>" alt=""></a>
                         </li>
-                        <li class="main-papers-content__image--list-item">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/about/img-2.png" alt="">
-                        </li>
-                        <li class="main-papers-content__image--list-item">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/about/img-3.png" alt="">
-                        </li>
-                        <li class="main-papers-content__image--list-item">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/about/img-4.png" alt="">
-                        </li>
-                        <li class="main-papers-content__image--list-item">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/about/img-5.png" alt="">
-                        </li>
+                        <?php $i++; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </div>

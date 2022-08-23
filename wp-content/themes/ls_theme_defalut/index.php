@@ -71,9 +71,9 @@ get_header();
                 </div>
 
                 <div class="introduction-image col-lg-6">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/phongmassage.png" alt="" class="introduction-image-1">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/thanhtoan.png" alt="" class="introduction-image-2">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/makeup.png" alt="" class="introduction-image-3">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/viber_image_2019-11-16_15-11-30.jpg" alt="" class="introduction-image-1">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/12.png" alt="" class="introduction-image-2">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/17.3 Shynh Liệu Trình2557.png" alt="" class="introduction-image-3">
                 </div>
 
             </div>
@@ -373,7 +373,7 @@ get_header();
                     <div class="event-list">
                         <div class="event-item col-lg-3 col-sm-12">
                             <div class="event-item-image image-pseudo">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/event/event1.png" alt="" class="event-image">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/event/0A1A0293.jpg" alt="" class="event-image">
                             </div>
                             <div class="event-item-text ">
 
@@ -418,7 +418,7 @@ get_header();
                     </div>
                 </div>
                 <div class="container-footer">
-                    <button class="btn-exception"><a href="<?php bloginfo('template_directory'); ?>/su-kien">Xem thêm</a></button>
+                    <button class="btn-exception"><a href="<?php echo home_url(); ?>/su-kien">Xem thêm</a></button>
                 </div>
             </div>
 
@@ -487,7 +487,7 @@ get_header();
 
                 </div>
                 <div class="container-footer">
-                    <button class="btn-exception">Xem thêm</button>
+                    <button class="btn-exception"><a href="<?php echo home_url(); ?>/uu-dai">Xem thêm</a></button>
                 </div>
             </div>
 
@@ -1488,7 +1488,7 @@ get_header();
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
                             <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name">1900 0000 00</div>
+                            <div class="contact__name">1900 989 800 (BẤM PHÍM 2)</div>
                             <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                         </div>
                         <div class="contact-body__column">
@@ -1561,11 +1561,11 @@ get_header();
                         <ul class="location-details-list col-lg-6">
                             <li class="location-details-list__item row">
                                 <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/thanhtoan.png" alt="" class="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/viber_image_2022-08-09_11-49-01-314.jpg" alt="" class="">
                                 </div>
                                 <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Quận 10</h4>
-                                    <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận 10 (Vòng Xoay Dân Chủ) </p>
+                                    <h4 class="location-details-right__name">Quận 3</h4>
+                                    <p class="location-details-right__info">13/5 Kỳ Đồng, Phường 9, Quận 3 </p>
 
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
@@ -1573,22 +1573,22 @@ get_header();
                             </li>
                             <li class="location-details-list__item row">
                                 <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/shynhhouse.png" alt="" class="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/IMG_0074.JPG" alt="" class="">
                                 </div>
                                 <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Bình Thạnh</h4>
-                                    <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh (Đối Diện Chợ Bà Chiểu)</p>
+                                    <h4 class="location-details-right__name">Quận 10</h4>
+                                    <p class="location-details-right__info">278/26 Tô Hiến Thành, Phường 15, Quận 10</p>
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
                             </li>
                             <li class="location-details-list__item row">
                                 <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/makeup.png" alt="" class="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/FYN_0904.JPG" alt="" class="">
                                 </div>
                                 <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Thủ Đức</h4>
-                                    <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần ĐH Sư Phạm Kĩ Thuật)</p>
+                                    <h4 class="location-details-right__name">Nam Kỳ Khởi Nghĩa</h4>
+                                    <p class="location-details-right__info">193A/6 Nam Kỳ Khởi Nghĩa, Phường Võ Thị Sáu, Quận 3</p>
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -1597,22 +1597,22 @@ get_header();
                         <ul class="location-details-list col-lg-6">
                             <li class="location-details-list__item row">
                                 <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/thanhtoan.png" alt="" class="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/NGT_-9646.jpg" alt="" class="">
                                 </div>
                                 <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Quận 7</h4>
-                                    <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7 (Gần cầu HimLam)</p>
+                                    <h4 class="location-details-right__name">Phan Xích Long</h4>
+                                    <p class="location-details-right__info">82 Phan Xích Long, Phường 3, Quận Bình Thạnh</p>
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
                             </li>
                             <li class="location-details-list__item row">
                                 <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/shynhhouse.png" alt="" class="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/NGT_-7083.jpg" alt="" class="">
                                 </div>
                                 <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Gò Vấp</h4>
-                                    <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò Vấp</p>
+                                    <h4 class="location-details-right__name">Nguyễn Gia Trí</h4>
+                                    <p class="location-details-right__info">69/20 Nguyễn Gia Trí (D2 cũ), Phường 25, Quận Bình Thạnh</p>
 
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
@@ -1620,11 +1620,11 @@ get_header();
                             </li>
                             <li class="location-details-list__item row">
                                 <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/makeup.png" alt="" class="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/FYN_0476.JPG" alt="" class="">
                                 </div>
                                 <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Tân Bình</h4>
-                                    <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân Bình</p>
+                                    <h4 class="location-details-right__name">Đặng Văn Bi</h4>
+                                    <p class="location-details-right__info">Đường N1, Nhà phố Moonlight, 100E/18 Đặng Văn Bi, Phường Bình Thọ, Thành phố Thủ Đức</p>
 
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
