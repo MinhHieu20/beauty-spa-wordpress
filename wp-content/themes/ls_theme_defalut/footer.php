@@ -111,14 +111,14 @@ global $ls_options;
                 <div class="footer-contact">
                     <ul class="footer-contact-list">
                         <li class="footer-contact-list__item">
-                            <a class="footer-contact-list__item--link fz16" href="">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
-                            <a class="footer-contact-list__item--link fz16" href=""> 1900 989 800 (BẤM PHÍM 2)</a>
+                            <a class="footer-contact-list__item--link fz16" href="tel:<?php echo $ls_options['hotline-1']; ?>">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
+                            <a class="footer-contact-list__item--link fz16" href="tel:<?php echo $ls_options['hotline-1']; ?>"> <?php echo $ls_options['hotline-1']; ?> (BẤM PHÍM 2)</a>
                         </li>
                         <li class="footer-contact-list__item">
-                            <a class="footer-contact-list__item--link fz16" href="">Website: <?php echo $ls_options['web']; ?></a>
+                            <a class="footer-contact-list__item--link fz16" href="https://shynhbeauty.com.vn" target="_blank">Website: <?php echo $ls_options['web']; ?></a>
                         </li>
                         <li class="footer-contact-list__item">
-                            <a class="footer-contact-list__item--link fz16" href="">Mail: <?php echo $ls_options['emailft-2']; ?></a>
+                            <a class="footer-contact-list__item--link fz16" href="mail:<?php echo $ls_options['emailft-2']; ?>">Mail: <?php echo $ls_options['emailft-2']; ?></a>
                         </li>
                     </ul>
                 </div>
