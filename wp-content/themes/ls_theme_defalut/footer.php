@@ -87,13 +87,13 @@ global $ls_options;
                         </h3>
                         <ul class="footer-top-menu__list">
                             <li class="footer-top-menu__list">
-                                <a class="footer-top-menu__list--link" href="<?php bloginfo('template_directory'); ?>/chinh-sach-bao-mat">Chính sách bảo mật</a>
+                                <a class="footer-top-menu__list--link" href="<?php echo home_url(); ?>/chinh-sach-bao-mat">Chính sách bảo mật</a>
                             </li>
                             <li class="footer-top-menu__list">
-                                <a class="footer-top-menu__list--link" href="<?php bloginfo('template_directory'); ?>/huong-dan-dat-lich">Hướng dẫn đặt lịch</a>
+                                <a class="footer-top-menu__list--link" href="<?php echo home_url(); ?>/huong-dan-dat-lich">Hướng dẫn đặt lịch</a>
                             </li>
                             <li class="footer-top-menu__list">
-                                <a class="footer-top-menu__list--link" href="<?php bloginfo('template_directory'); ?>/tuyen-dung">Tuyển dụng Shynh Beauty Spa</a>
+                                <a class="footer-top-menu__list--link" href="<?php echo home_url(); ?>/tuyen-dung">Tuyển dụng Shynh Beauty Spa</a>
                             </li>
                         </ul>
                     </div>
@@ -1230,12 +1230,92 @@ global $ls_options;
     <div class="form--pop__appointment">
     </div>
 </div>
+<div class="form--register hide" id="open-form">
+    <div class="form--contact__inner contact_inner-mobile">
+        <div class="form--contact__inner--logo">
+            <img src="./images/footerImg.png" alt="" class="form--contact__inner--logo--image">
+        </div>
+        <div class="form--contact__inner--contact">
+            <form action="">
+                <div class="form--contact__inner--contact--form contact_inner-mobile--form row">
+                    <div class="form--contact__inner--contact--form-group form-group col l-12">
+                        <input type="text" placeholder="Họ Tên" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form--contact__inner--contact--form row">
+                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                        <input type="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                        <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                    </div>
+                </div>
+                <div class="form--contact__inner--contact--form row">
+                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                        <select name="" placeholder="Chọn dịch vụ" id="" class="form-control">
+                            <option value="">Chọn dịch vụ</option>
+                            <option value="">Dịch vụ 1</option>
+                            <option value="">Dịch vụ 2</option>
+                            <option value="">Dịch vụ 3</option>
+                        </select>
+                    </div>
+                    <div class="form--contact__inner--contact--form-group form-group col l-6">
+                        <select name="" placeholder="Chọn Khu Vực" id="" class="form-control">
+                            <option value="">Chọn dịch vụ</option>
+                            <option value="">Dịch vụ 1</option>
+                            <option value="">Dịch vụ 2</option>
+                            <option value="">Dịch vụ 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form--contact__inner--contact--form row">
+                    <div class="form--contact__inner--contact--form-group form-group col l-12">
+                                <textarea name="" class="form-textarea" placeholder="Ghi chú" id="" cols="30"
+                                          rows="10"></textarea>
+                    </div>
+                </div>
+                <button class="btn send-contact__btn">GỬI NGAY</button>
+            </form>
+            <p class="form--contact__inner--contact--text contact_inner-mobile--text">Hoặc liên hệ hotline <span
+                        class="phone-number">0909
+                            999 999</span> để được tư vấn nhanh nhất</p>
+        </div>
+
+    </div>
+    <div class="form--contact__inner--extend contact_inner-mobile--extend">
+        <ul class="form--contact__inner--extend--list">
+            <li class="form--contact__inner--extend--list--item"><i
+                        class="icon-extend fa-solid fa-location-dot"></i>Chi nhánh</li>
+            <li class="form--contact__inner--extend--list--item"><i
+                        class="icon-extend fa-solid fa-headset"></i>Tư vấn</li>
+            <li class="form--contact__inner--extend--list--item"><i
+                        class="icon-extend fa-solid fa-calendar-days"></i>Đặt lịch</li>
+
+        </ul>
+    </div>
+</div>
 </div><!-- #page -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/swiper-bundle.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
-<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>-->
-<!--<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

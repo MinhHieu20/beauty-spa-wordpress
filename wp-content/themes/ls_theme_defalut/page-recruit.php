@@ -5,6 +5,7 @@
  * @package ls_theme
  */
 get_header();
+global $ls_options;
 ?>
     <div class="main-recruit">
         <div class="container container-width container-recruit">
@@ -62,7 +63,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1">
                         <h3 class="main-recruit-content__skin--title">Nhân viên message</h3>
@@ -103,7 +104,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên chăm sóc da</h3>
@@ -144,7 +145,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên message</h3>
@@ -185,7 +186,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                 </div>
                 <div class="main-recruit-content__list">
@@ -228,7 +229,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên message</h3>
@@ -269,7 +270,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên chăm sóc da</h3>
@@ -310,7 +311,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên message</h3>
@@ -351,7 +352,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                 </div>
                 <div class="main-recruit-content__list">
@@ -394,7 +395,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên message</h3>
@@ -435,7 +436,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên chăm sóc da</h3>
@@ -476,7 +477,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                     <div class="main-recruit-content__skin border-1 none-mobile">
                         <h3 class="main-recruit-content__skin--title">Nhân viên message</h3>
@@ -517,7 +518,7 @@ get_header();
                                 Nơi làm việc : Phường Tân Phong, Quận 7, Tp Hồ Chí Minh
                             </li>
                         </ul>
-                        <button class="main-recruit-content__skin--btn btn">Liên hệ hotline 0909 999 999</button>
+                        <button class="main-recruit-content__skin--btn btn"><a href="tel:<?php echo $ls_options['hotline-1']; ?>">Liên hệ hotline <?php echo $ls_options['hotline-1']; ?></a></button>
                     </div>
                 </div>
                 <div class="recruit-pagination">

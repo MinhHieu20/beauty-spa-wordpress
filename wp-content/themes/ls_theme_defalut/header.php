@@ -40,9 +40,12 @@ global $ls_options;
         </div>
         <div class="header-contact d-flex row">
             <div class="header-contact-left col-xl-4 col-md-3 col-4">
-                <form role="search" method="get" action="">
-                    <input type="search" name="" class="header-contact-left__search" placeholder="Thông tin tìm kiếm" />
-                    <button type="submit" class="header-contact-left__button dp-none">
+                <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                    <input type="search" name="" class="header-contact-left__search"
+                           value="<?php echo get_search_query() ?>"
+                           placeholder="<?php echo esc_attr_x( 'Thông tin tìm kiếm', 'placeholder' ) ?>"
+                           title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>"/>
+                    <button type="submit" class="header-contact-left__button dp-none" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search header-contact-left__button--icon" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5
                                         5.5 0 0 1 11 0z" />
@@ -108,7 +111,7 @@ global $ls_options;
                     </div>
                 </div>
                 <button class="header-contact-right__tel">
-                    <span class="header-contact-right__tel--number">hotline <?php echo $ls_options['hotline-1']; ?></span>
+                    <a href="tel:<?php echo $ls_options['hotline-1']; ?>"><span class="header-contact-right__tel--number">hotline <?php echo $ls_options['hotline-1']; ?></span></a>
                 </button>
             </div>
         </div>

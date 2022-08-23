@@ -155,27 +155,27 @@ function willgroup_init_beauty() {
     register_post_type('beauty',
         array(
             'labels' => array(
-                'name' => __('Kết quả điều trị', 'lsweb') ,
-                'singular_name' => __('Kết quả điều trị', 'lsweb') ,
-                'menu_name' => __('Kết quả điều trị', 'lsweb') ,
-                'name_admin_bar' => __('Kết quả điều trị', 'lsweb') ,
-                'all_items' => __('Tất cả kết quả điều trị', 'lsweb') ,
-                'add_new' => __('Thêm kết quả điều trị', 'lsweb') ,
-                'add_new_item' => __('Thêm kết quả điều trị', 'lsweb') ,
-                'edit_item' => __('Sửa kết quả điều trị', 'lsweb') ,
+                'name'            => __('Kết quả điều trị', 'LeadSoft') ,
+                'singular_name'   => __('Kết quả điều trị', 'LeadSoft') ,
+                'menu_name'       => __('Kết quả điều trị', 'LeadSoft') ,
+                'name_admin_bar'  => __('Kết quả điều trị', 'LeadSoft') ,
+                'all_items'       => __('Tất cả kết quả điều trị', 'LeadSoft') ,
+                'add_new'         => __('Thêm kết quả điều trị', 'LeadSoft') ,
+                'add_new_item'    => __('Thêm kết quả điều trị', 'LeadSoft') ,
+                'edit_item'       => __('Sửa kết quả điều trị', 'LeadSoft') ,
             ),
-            'description' => __('Kết quả điều trị', 'lsweb') ,
-            'menu_position' => 5,
-            'menu_icon' => 'dashicons-admin-multisite',
+            'description'     => __('Kết quả điều trị', 'LeadSoft') ,
+            'menu_position'   => 5,
+            'menu_icon'       => 'dashicons-admin-multisite',
             'capability_type' => 'post',
-            'public' => true,
-            'has_archive' => 'ket-qua-dieu-tri',
+            'public'          => true,
+            'has_archive'     => 'ket-qua-dieu-tri',
             'supports' => array(
                 'title',
                 'thumbnail',
                 'editor',
             ) ,
-            'rewrite' => array(
+            'rewrite'  => array(
                 'slug' => 'ket-qua-dieu-tri'
             ) ,
         )
@@ -183,36 +183,136 @@ function willgroup_init_beauty() {
     register_taxonomy('beauty_cat', array('beauty') ,
         array(
             'labels' => array(
-                'name' => __('Phân Loại kết quả điều trị', 'lsweb') ,
-                'singular_name' => __('Phân Loại kết quả điều trị', 'lsweb') ,
-                'search_items' => __('Tìm kiếm loại kết quả điều trị', 'lsweb') ,
-                'all_items' => __('Tất cả loại kết quả điều trị', 'lsweb') ,
-                'parent_item' => __('Loại kết quả điều trị cha', 'lsweb') ,
-                'parent_item_colon' => __('Loại kết quả điều trị cha:', 'lsweb') ,
-                'edit_item' => __('Sửa Loại kết quả điều trị', 'lsweb') ,
-                'update_item' => __('Cập nhật loại kết quả điều trị', 'lsweb') ,
-                'add_new_item' => __('Thêm loại kết quả điều trị', 'lsweb') ,
-                'new_item_name' => __('Tên loại kết quả điều trị', 'lsweb') ,
-                'menu_name' => __('Loại kết quả điều trị', 'lsweb') ,
+                'name'              => __('Phân Loại kết quả điều trị', 'LeadSoft') ,
+                'singular_name'     => __('Phân Loại kết quả điều trị', 'LeadSoft') ,
+                'search_items'      => __('Tìm kiếm loại kết quả điều trị', 'LeadSoft') ,
+                'all_items'         => __('Tất cả loại kết quả điều trị', 'LeadSoft') ,
+                'parent_item'       => __('Danh mục kết quả điều trị cha', 'LeadSoft') ,
+                'parent_item_colon' => __('Danh mục kết quả điều trị cha:', 'LeadSoft') ,
+                'edit_item'         => __('Sửa Danh mục kết quả điều trị', 'LeadSoft') ,
+                'update_item'       => __('Cập nhật Danh mục kết quả điều trị', 'LeadSoft') ,
+                'add_new_item'      => __('Thêm Danh mục kết quả điều trị', 'LeadSoft') ,
+                'new_item_name'     => __('Tên Danh mục kết quả điều trị', 'LeadSoft') ,
+                'menu_name'         => __('Danh mục kết quả điều trị', 'LeadSoft') ,
             ),
             'hierarchical' => true,
             'public' => true,
             'rewrite' => array(
-                'slug' => 'bat-dong-san'
+                'slug' => 'loai-ket-qua-dieu-tri'
             ) ,
         )
     );
 }
 add_action('init', 'willgroup_init_beauty');
 
-function willgroup_init_event() {
-    register_post_type('event',
+function willgroup_init_event_spa() {
+    register_post_type('event-spa',
         array(
-
+            'labels' => array(
+                'name'            => __('Sự kiện Spa', 'LeadSoft') ,
+                'singular_name'   => __('Sự kiện Spa', 'LeadSoft') ,
+                'menu_name'       => __('Sự kiện Spa', 'LeadSoft') ,
+                'name_admin_bar'  => __('Sự kiện Spa', 'LeadSoft') ,
+                'all_items'       => __('Tất cả Sự kiện Spa', 'LeadSoft') ,
+                'add_new'         => __('Thêm Sự kiện Spa', 'LeadSoft') ,
+                'add_new_item'    => __('Thêm Sự kiện Spa', 'LeadSoft') ,
+                'edit_item'       => __('Sửa Sự kiện Spa', 'LeadSoft') ,
+            ),
+            'description'     => __('Sự kiện Spa', 'LeadSoft') ,
+            'menu_position'   => 5,
+            'menu_icon'       => 'dashicons-admin-multisite',
+            'capability_type' => 'post',
+            'public'          => true,
+            'has_archive'     => 'su-kien-spa',
+            'supports'        => array(
+                'title',
+                'thumbnail',
+                'editor',
+            ),
+            'rewrite'  => array(
+                'slug' => 'su-kien-spa'
+            ),
+        )
+    );
+    register_taxonomy('event_cat_spa', array('event-spa') ,
+        array(
+            'labels' => array(
+                'name'              => __('Phân Loại sự kiện Spa', 'LeadSoft') ,
+                'singular_name'     => __('Phân Loại sự kiện Spa', 'LeadSoft') ,
+                'search_items'      => __('Tìm kiếm loại sự kiện Spa', 'LeadSoft') ,
+                'all_items'         => __('Tất cả loại sự kiện Spa', 'LeadSoft') ,
+                'parent_item'       => __('Danh mục sự kiện Spa cha', 'LeadSoft') ,
+                'parent_item_colon' => __('Danh mục sự kiện Spa cha:', 'LeadSoft') ,
+                'edit_item'         => __('Sửa danh mục sự kiện Spa', 'LeadSoft') ,
+                'update_item'       => __('Cập nhật danh mục sự kiện Spa', 'LeadSoft') ,
+                'add_new_item'      => __('Thêm danh mục sự kiện Spa', 'LeadSoft') ,
+                'new_item_name'     => __('Tên danh mục sự kiện Spa', 'LeadSoft') ,
+                'menu_name'         => __('Danh mục sự kiện Spa', 'LeadSoft') ,
+            ),
+            'hierarchical' => true,
+            'public'       => true,
+            'rewrite'      => array(
+                'slug'     => 'loai-su-kien-spa'
+            ),
         )
     );
 }
-add_action('init', 'willgroup_init_event');
+add_action('init', 'willgroup_init_event_spa');
+
+function willgroup_init_tip_beauty() {
+    register_post_type('tip-beauty',
+        array(
+            'labels' => array(
+                'name'            => __('Mẹo làm đẹp', 'LeadSoft') ,
+                'singular_name'   => __('Mẹo làm đẹp', 'LeadSoft') ,
+                'menu_name'       => __('Mẹo làm đẹp', 'LeadSoft') ,
+                'name_admin_bar'  => __('Mẹo làm đẹp', 'LeadSoft') ,
+                'all_items'       => __('Tất cả Mẹo làm đẹp', 'LeadSoft') ,
+                'add_new'         => __('Thêm Mẹo làm đẹp', 'LeadSoft') ,
+                'add_new_item'    => __('Thêm Mẹo làm đẹp', 'LeadSoft') ,
+                'edit_item'       => __('Sửa Mẹo làm đẹp', 'LeadSoft') ,
+            ),
+            'description'     => __('Mẹo làm đẹp', 'LeadSoft') ,
+            'menu_position'   => 5,
+            'menu_icon'       => 'dashicons-admin-multisite',
+            'capability_type' => 'post',
+            'public'          => true,
+            'has_archive'     => 'meo-lam-dep',
+            'supports'        => array(
+                'title',
+                'thumbnail',
+                'editor',
+            ),
+            'rewrite'  => array(
+                'slug' => 'meo-lam-dep'
+            ),
+        )
+    );
+    register_taxonomy('tip_beauty_cat', array('tip-beauty') ,
+        array(
+            'labels' => array(
+                'name'              => __('Phân Loại Mẹo làm đẹp', 'LeadSoft') ,
+                'singular_name'     => __('Phân Loại Mẹo làm đẹp', 'LeadSoft') ,
+                'search_items'      => __('Tìm kiếm loại Mẹo làm đẹp', 'LeadSoft') ,
+                'all_items'         => __('Tất cả loại Mẹo làm đẹp', 'LeadSoft') ,
+                'parent_item'       => __('Danh mục Mẹo làm đẹp cha', 'LeadSoft') ,
+                'parent_item_colon' => __('Danh mục Mẹo làm đẹp cha:', 'LeadSoft') ,
+                'edit_item'         => __('Sửa Danh mục Mẹo làm đẹp', 'LeadSoft') ,
+                'update_item'       => __('Cập nhật Danh mục Mẹo làm đẹp', 'LeadSoft') ,
+                'add_new_item'      => __('Thêm Danh mục Mẹo làm đẹp', 'LeadSoft') ,
+                'new_item_name'     => __('Tên Danh mục Mẹo làm đẹp', 'LeadSoft') ,
+                'menu_name'         => __('Danh mục Mẹo làm đẹp', 'LeadSoft') ,
+            ),
+            'hierarchical' => true,
+            'public'       => true,
+            'rewrite'      => array(
+                'slug'     => 'loai-meo-lam-dep'
+            ),
+        )
+    );
+}
+add_action('init', 'willgroup_init_tip_beauty');
+
 function add_additional_class_on_li($classes, $item, $args) {
     if(isset($args->add_li_class)) {
         $classes[] = $args->add_li_class;
@@ -230,6 +330,7 @@ function special_nav_class ($classes, $item) {
 
 //add active class
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
 /**
  * Implement the Custom Header feature.
  */
