@@ -2602,21 +2602,21 @@ a:hover {
   margin-bottom: 12rem;
 }
 
-.home {
+.home-training {
   background-color: #fff;
   border: 1px solid #fff;
   padding: 4rem 0;
 }
-.home h1 {
+.home-training h1 {
   color: #a1710f;
   font-family: K2D-ExtraBold;
   line-height: 1.2;
   margin: 0;
 }
-.home .details-header {
+.home-training .details-header {
   margin-top: 2rem;
 }
-.home .details-header p {
+.home-training .details-header p {
   border: 1px solid #b38c3c;
   border-radius: 1rem;
   font-size: 1.6rem;
@@ -2624,59 +2624,59 @@ a:hover {
   padding: 1rem;
   text-align: justify;
 }
-.home .details-content {
+.home-training .details-content {
   margin-top: 2rem;
 }
-.home .details-content-list {
+.home-training .details-content-list {
   background-color: #f2f2f2;
   padding: 2.5rem 1rem 5.2rem;
   margin-bottom: 1.6rem;
 }
-.home .details-content-list__item--text {
+.home-training .details-content-list__item--text {
   font-size: 1.6rem;
   font-family: K2D-Bold;
   margin-top: 1.6rem;
 }
-.home .details-content-list__item--sub {
+.home-training .details-content-list__item--sub {
   font-size: 1.6rem;
   font-family: K2D-ExtraLight;
 }
-.home .details-reason-title {
+.home-training .details-reason-title {
   font-size: 2rem;
   font-family: K2D-Bold;
   color: #a1710f;
 }
-.home .details-reason-sub {
+.home-training .details-reason-sub {
   font-size: 1.6rem;
   font-family: K2D-ExtraLight;
   margin-top: 2rem;
   text-align: justify;
 }
-.home .details-reason-img {
+.home-training .details-reason-img {
   margin: 3rem auto;
   width: 60rem;
 }
-.home .details-reason-img img {
+.home-training .details-reason-img img {
   width: 100%;
 }
-.home .details-expert-title {
+.home-training .details-expert-title {
   font-family: K2D-Bold;
   color: #a1710f;
 }
-.home .details-expert-sub {
+.home-training .details-expert-sub {
   font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   margin-top: 2rem;
   text-align: justify;
 }
-.home .details-expert-img__one {
+.home-training .details-expert-img__one {
   margin: 3rem auto !important;
   width: 60rem;
   position: relative;
   margin: 1rem 0;
   position: relative;
 }
-.home .details-expert-img__one--play {
+.home-training .details-expert-img__one--play {
   position: absolute;
   width: 8rem;
   height: 8rem;
@@ -2688,45 +2688,45 @@ a:hover {
   border-radius: 50%;
   opacity: 0.7;
 }
-.home .details-expert-img__one--play img {
+.home-training .details-expert-img__one--play img {
   width: 100%;
   height: 100%;
 }
-.home .details-expert-img__one img {
+.home-training .details-expert-img__one img {
   width: 100%;
 }
-.home .details-expert-img__one--icon {
+.home-training .details-expert-img__one--icon {
   position: absolute;
   top: 0;
   width: 100%;
   text-align: center;
 }
-.home .details-expert-img__two {
+.home-training .details-expert-img__two {
   position: absolute;
   margin-top: -15.3rem;
   margin-left: 41.2rem;
   width: 2.4rem;
 }
-.home .details-expert-img__three {
+.home-training .details-expert-img__three {
   position: absolute;
   height: 6rem;
   margin-top: -17rem;
   margin-left: 39rem;
 }
-.home .details-courses {
+.home-training .details-courses {
   position: relative;
 }
-.home .details-courses-title {
+.home-training .details-courses-title {
   font-family: K2D-Bold;
   color: #a1710f;
   margin-top: 2.6rem;
 }
-.home .details-courses-sub {
+.home-training .details-courses-sub {
   font-family: K2D-ExtraLight;
   font-size: 1.6rem;
   margin-top: 2rem;
 }
-.home .details-courses::after {
+.home-training .details-courses::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -2736,87 +2736,87 @@ a:hover {
   height: 0.2rem;
   background-color: #a0700f;
 }
-.home .details-graduate {
+.home-training .details-graduate {
   margin-top: 5rem;
 }
-.home .details-graduate-title {
+.home-training .details-graduate-title {
   padding-top: 5rem;
   font-family: K2D-Bold;
   text-align: center;
   color: #a1710f;
 }
-.home .details-graduate-outstanding {
+.home-training .details-graduate-outstanding {
   margin-top: 4rem;
   text-align: center;
   position: relative;
 }
-.home .details-graduate-outstanding__list {
+.home-training .details-graduate-outstanding__list {
   display: flex;
   justify-content: center;
   margin-left: 2.5em;
 }
-.home .details-graduate-outstanding__list--item {
+.home-training .details-graduate-outstanding__list--item {
   width: 0 !important;
   margin: 0 3.2rem;
   padding: 0;
 }
-.home .details-graduate-outstanding__list--item--images img {
+.home-training .details-graduate-outstanding__list--item--images img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.home .details-graduate-outstanding__list--item--text {
+.home-training .details-graduate-outstanding__list--item--text {
   font-family: K2D-Bold;
   color: #a1710f;
   text-align: center;
   padding: 2rem 0 1rem 0;
 }
-.home .details-graduate-outstanding__move {
+.home-training .details-graduate-outstanding__move {
   position: absolute;
   top: 7rem;
 }
-.home .details-graduate-outstanding__move--icon {
+.home-training .details-graduate-outstanding__move--icon {
   width: 100%;
 }
-.home .details-graduate-outstanding .swiper-button-prev,
-.home .details-graduate-outstanding .swiper-button-next {
+.home-training .details-graduate-outstanding .swiper-button-prev,
+.home-training .details-graduate-outstanding .swiper-button-next {
   top: 11rem;
 }
-.home .details-graduate-outstanding .swiper-button-next {
+.home-training .details-graduate-outstanding .swiper-button-next {
   right: 0;
 }
-.home .details-rated {
+.home-training .details-rated {
   margin-top: 4rem;
 }
-.home .details-rated-title {
+.home-training .details-rated-title {
   text-align: center;
   color: #a1710f;
   font-family: K2D-Bold;
   font-size: 3rem;
 }
-.home .details-rated-student__list--box {
+.home-training .details-rated-student__list--box {
   display: flex;
   border: 1px solid #d6d6d6;
   border-radius: 1rem;
   padding: 1rem 1rem;
   margin: 2rem 0;
 }
-.home .details-rated-student__list--box img {
+.home-training .details-rated-student__list--box img {
   width: 5rem;
   height: 5rem;
   margin: 0.5rem 1.5rem 0 2rem;
 }
-.home .details-rated-student__list--box--item h3 {
+.home-training .details-rated-student__list--box--item h3 {
   font-size: 2rem;
   color: #a1710f;
   font-family: K2D-Bold;
 }
-.home .details-rated-student__list--box--item-faint {
+.home-training .details-rated-student__list--box--item-faint {
   font-family: K2D-ExtraLight;
   font-size: 1.4rem;
   color: #a2a2a2;
 }
-.home .details-rated-student__list--box--item-dark {
+.home-training .details-rated-student__list--box--item-dark {
   color: #000;
   font-size: 1.6rem;
   font-family: K2D-ExtraLight;
@@ -3074,9 +3074,8 @@ a:hover {
 }
 .main-info .main-inftras-content .main-pc .main-inftras-content__right--three {
   position: absolute;
-  right: 4.8rem;
+  right: -3.2rem;
   bottom: 5rem;
-  width: 24.4rem;
   height: 23.2rem;
 }
 .main-info .main-inftras-content .main-pc .main-inftras-content__left {
@@ -7634,36 +7633,36 @@ a:hover {
   .training-detail {
     padding-bottom: 18rem;
   }
-  .home {
+  .home-training {
     border-radius: 2rem;
   }
-  .home h1 {
+  .home-training h1 {
     padding: 0 7rem;
     font-size: 4rem;
   }
-  .home .details-header,
-.home .details-content,
-.home .details-reason,
-.home .details-expert,
-.home .details-courses,
-.home .details-graduate,
-.home .details-rated {
+  .home-training .details-header,
+.home-training .details-content,
+.home-training .details-reason,
+.home-training .details-expert,
+.home-training .details-courses,
+.home-training .details-graduate,
+.home-training .details-rated {
     padding: 0 7rem;
   }
-  .home .details-expert {
+  .home-training .details-expert {
     margin-top: 3rem;
   }
-  .home .details-expert-title {
+  .home-training .details-expert-title {
     font-size: 3rem;
   }
-  .home .details-graduate-title,
-.home .details-courses-title {
+  .home-training .details-graduate-title,
+.home-training .details-courses-title {
     font-size: 3rem;
   }
-  .home .details-courses::after {
+  .home-training .details-courses::after {
     width: 70%;
   }
-  .home .details-graduate-outstanding__list--item--text {
+  .home-training .details-graduate-outstanding__list--item--text {
     font-size: 1.8rem;
   }
   .address-training {
@@ -7681,43 +7680,43 @@ a:hover {
     padding: 0 2rem;
     background-color: #fdf9e8;
   }
-  .training-detail-container .home {
+  .training-detail-container .home-training-mobile {
     background-color: #fff;
   }
-  .training-detail-container .home > .heading-mobile {
+  .training-detail-container .home-training-mobile > .heading-mobile {
     display: block;
     padding: 0 10rem;
     margin-bottom: 5rem;
     font-size: 2rem;
     text-align: center;
   }
-  .training-detail-container .home .details-reason-img,
-.training-detail-container .home .details-expert-img__one {
+  .training-detail-container .home-training-mobile .details-reason-img,
+.training-detail-container .home-training-mobile .details-expert-img__one {
     width: 100%;
   }
-  .training-detail-container .home .details-rated-title {
+  .training-detail-container .home-training-mobile .details-rated-title {
     font-size: 2.5rem;
   }
-  .training-detail-container .home .details-header,
-.training-detail-container .home .details-content,
-.training-detail-container .home .details-reason,
-.training-detail-container .home .details-expert,
-.training-detail-container .home .details-courses,
-.training-detail-container .home .details-graduate,
-.training-detail-container .home .details-rated {
+  .training-detail-container .home-training-mobile .details-header,
+.training-detail-container .home-training-mobile .details-content,
+.training-detail-container .home-training-mobile .details-reason,
+.training-detail-container .home-training-mobile .details-expert,
+.training-detail-container .home-training-mobile .details-courses,
+.training-detail-container .home-training-mobile .details-graduate,
+.training-detail-container .home-training-mobile .details-rated {
     padding: 0 1rem;
   }
-  .training-detail-container .home .details-graduate-title,
-.training-detail-container .home .details-expert-title {
+  .training-detail-container .home-training-mobile .details-graduate-title,
+.training-detail-container .home-training-mobile .details-expert-title {
     font-size: 2rem;
   }
-  .training-detail-container .home .details-courses-title {
+  .training-detail-container .home-training-mobile .details-courses-title {
     font-size: 2rem;
   }
-  .training-detail-container .home .details-courses::after {
+  .training-detail-container .home-training-mobile .details-courses::after {
     width: 100%;
   }
-  .training-detail-container .home .details-graduate-outstanding__list--item--text {
+  .training-detail-container .home-training-mobile .details-graduate-outstanding__list--item--text {
     font-size: 1.4rem;
   }
   .address-training {
@@ -10338,23 +10337,11 @@ a:hover {
   bottom: 0;
 }
 .top-banner-3 {
-  background-image: url("../images/banner3-1.png");
+  background-image: url("../images/banner3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
-  position: relative;
-}
-.top-banner-3 .banner-title {
-  position: absolute;
-  right: 14rem;
-  top: 18rem;
-  width: 91rem;
-  line-height: 1.2em;
-  font-size: 4rem;
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 0 0.5rem 1rem #a1710f;
 }
 
 .treatment-result {

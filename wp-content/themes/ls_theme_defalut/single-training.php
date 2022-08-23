@@ -12,7 +12,7 @@ get_header();
     <div class="container-max training-detail">
         <div class="container grid wide ">
             <div class="row details training-detail-container">
-                <div class="col-lg-9 home">
+                <div class="col-lg-9 home-training">
 
                     <h1 class="dp-none dp-blockPC">Khóa đào tạo chăm sóc da - học spa chuyên nghiệp</h1>
                     <h1 class="heading-mobile dp-nonePC">Khóa đào tạo chăm sóc da học spa chuyên nghiệp</h1>
