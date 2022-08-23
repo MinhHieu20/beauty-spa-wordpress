@@ -50,6 +50,7 @@ global $ls_options;
                         <div class="footer-top-contact__tel">
                             <h3 class="contact-title"> HOTLINE </h3>
                             <a href="#"><?php echo $ls_options['hotline-1']; ?> - <?php echo $ls_options['hotline-2']; ?></a>
+                            <a href="">1900 989 800 (BẤM PHÍM 2) </a>
                         </div>
                         <div class="footer-top-contact__info">
                             <h3 class="contact-title"> Thông tin liên hệ
@@ -117,6 +118,32 @@ global $ls_options;
                         <a class="footer-contact-list__item--link fz16" href="">Mail:info@shynhbeauty.com</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container footer-width">
+            <div class="row">
+            <div class="footer-bottom-left  col-xl-6 col-md-6">
+                <h3 class="footer-title">SHYNH BEAUTY
+                    SPA - Dẫn đầu trị mụn uy tín số 1 Việt Nam</h3>
+                <div class="footer-contact">
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-list__item">
+                            <a class="footer-contact-list__item--link fz16" href="">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
+                            <a class="footer-contact-list__item--link fz16" href=""> 1900 989 800 (BẤM PHÍM 2)</a>
+                        </li>
+                        <li class="footer-contact-list__item">
+                            <a class="footer-contact-list__item--link fz16" href="">Website: <?php echo $ls_options['web']; ?></a>
+                        </li>
+                        <li class="footer-contact-list__item">
+                            <a class="footer-contact-list__item--link fz16" href="">Mail: <?php echo $ls_options['emailft-2']; ?></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-right col-xl-6 col-md-6">
+                Giấy phép kinh doanh tại TP.Hồ Chí Minh
             </div>
         </div>
     </div>
