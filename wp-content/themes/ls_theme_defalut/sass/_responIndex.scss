@@ -52,6 +52,7 @@
 
             .introduction-image-1 {
                 height: 60rem;
+                width: 64.5%;
                 margin-left: 50%;
                 transform: translateX(-50%);
             }
@@ -177,8 +178,11 @@
 
                     .event-item {
                         .event-item-image {
+                            height: 27.7rem;
                             .event-image {
                                 width: 100%;
+                                object-fit: cover;
+                                border-radius: 2rem;
                             }
                         }
 
