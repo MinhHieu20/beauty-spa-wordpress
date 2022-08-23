@@ -20,9 +20,7 @@ global $ls_options;
                     </div>
                     <div class="contact-address-item__form-contact col l-6 col-12">
                         <div class="contact-address-item__form-contact--address">
-                            <h2 class="contact-address-item__form-contact--address--title">SHYNH BEAUTY SPA - SPA
-                                LÀM ĐẸP HÀNG ĐẦU
-                                VIỆT NAM VỚI 50 CHI NHÁNH TRÊN TOÀN QUỐC
+                            <h2 class="contact-address-item__form-contact--address--title">SHYNH BEAUTY SPA - Dẫn đầu trị mụn uy tín số 1 Việt Nam
                             </h2>
                             <p class="contact-address-item__form-contact--address--text">Hotline: <?php echo $ls_options['hotline-1']; ?></p>
                             <p class="contact-address-item__form-contact--address--text">Website: <?php echo $ls_options['web']; ?></p>

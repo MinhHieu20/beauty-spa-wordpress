@@ -26,25 +26,20 @@ global $ls_options;
                                     <div class="main-content-left">
                                         <ul class="main-content-left__list">
                                             <li class="main-content-left__list--item">
-                                                Với sứ mệnh cao cả “Làm đẹp cho đời, làm đẹp cho người” hệ thống
-                                                Shynh Beauty Spa luôn nỗ lực với khát khao “Đánh thức vẻ đẹp tiềm
-                                                ẩn” cho khách hàng. Thương hiệu không ngừng phát triển mạnh mẽ, mở
-                                                rộng quy mô với hơn 50 chi nhánh trong và ngoài nước, góp phần đưa
-                                                dịch vụ chăm sóc sắc đẹp Việt Nam nâng tầm Thế giới.<br><br>
-                                                Shynh Beauty Spa luôn đón đầu những xu hướng hiện đại, đem đến cho
-                                                khách hàng những dịch vụ làm đẹp & thẩm mỹ hoàn hảo nhất. Bên cạnh
-                                                đó, Shynh Beauty Spa thường xuyên chiêu mộ nhân tài, đào tạo phát
-                                                triển đội ngũ từ bác sĩ đến kỹ thuật viên, đảm bảo liên tục cập nhật
-                                                kiến thức mới nâng cao kỹ năng chuyên môn và kỹ năng mềm nhằm mang
-                                                đến cho khách hàng những trải nghiệm dịch vụ tốt.<br><br>
-                                                Thước đo sự thành công lớn nhất của chúng tôi là nụ cười hài lòng,
-                                                sự tin tưởng tuyệt đối của khách hàng. Hệ thống Shynh Beauty Spa
-                                                nhận được đánh giá tốt từ hàng triệu khách hàng trong và ngoài nước.
-                                                Rất đông người nổi tiếng, các doanh nhân đã gửi trọn “nhan sắc” để
-                                                Shynh Beauty Spa chăm chút.<br><br>
-                                                Shynh Beauty Spa đã vươn mình trở thành một hệ thống Thẩm mỹ viện
-                                                hàng đầu Việt Nam với hơn 50 chi nhánh ôm trọn hình chữ S Việt Nam,
-                                                được đông đảo khách hàng tin tưởng đồng hành, lựa chọn.<br><br>
+                                                Shynh Beauty Spa - Dẫn đầu trị mụn uy tín với phác đồ trị liệu cùng
+                                                chuyên gia tư vấn, kê đơn dược mỹ phẩm cho từng làn da khác nhau.<br><br>
+                                                Tiêu chí của Shynh Beauty Spa là mang đến những dịch vụ làm đẹp
+                                                chất lượng, hiệu quả với chi phí hợp lý. Chúng tôi không ngừng 
+                                                cập nhật các xu hướng làm đẹp trên thị trường để mang đến trải 
+                                                nghiệm mới mẻ cho khách hàng.<br><br>
+                                                Đến với Shynh Beauty Spa, quý khách hàng sẽ được các chuyên gia 
+                                                tư vấn, soi da lên phác đồ chuyên biệt cho từng làn da của khách 
+                                                hàng. Shynh Beauty Spa sở hữu liệu pháp điều trị và dướng da mụn 
+                                                khoa học kết hợp với các dòng Dược Mỹ Phẩm được chuyên gia kê toa..<br><br>
+                                                Hệ thống Shynh Beauty Spa trải rộng khắp cả nước, đáp ứng nhu cầu
+                                                làm đẹp của chị em phụ nữ ở khắp mọi nơi. Không gian Shynh Beauty 
+                                                Spa được thiết kế nhẹ nhàng, gần gũi và mang đến trải nghiệm cực 
+                                                kì thư giãn cho khách hàng.<br><br>
                                                 <?php //the_content(); ?>
                                             </li>
                                         </ul>
@@ -85,11 +80,11 @@ global $ls_options;
                                     <div class="row">
                                         <div class="col-lg-6 col-lg-6 col-md-6 main-inftras-content__right">
                                             <img class="main-inftras-content__right--one"
-                                                 src="<?php bloginfo('template_directory'); ?>/images/about/img3.png" alt="">
+                                                 src="<?php bloginfo('template_directory'); ?>/images/about/viber_image_2019-11-16_15-14-09.png" alt="">
                                             <img class="main-inftras-content__right--two"
-                                                 src="<?php bloginfo('template_directory'); ?>/images/about/img4.png" alt="">
+                                                 src="<?php bloginfo('template_directory'); ?>/images/about/viber_image_2019-11-16_15-11-35.jpg" alt="">
                                             <img class="main-inftras-content__right--three"
-                                                 src="<?php bloginfo('template_directory'); ?>/images/about/img5.png" alt="">
+                                                 src="<?php bloginfo('template_directory'); ?>/images/about/12.png" alt="">
                                         </div>
                                         <div class="col-lg-6 col-lg-6 col-md-6 main-inftras-content__left">
                                             <ul class="main-inftras-content__left--list">
@@ -255,10 +250,10 @@ global $ls_options;
                         <div class="col-lg-6 col-md-6 main-device-left wh-100">
                             <ul class="main-device-left__list">
                                 <li class="main-device-left__list--item">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/about/img7.png" alt="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/about/viber_image_2019-11-16_15-11-30.png" alt="">
                                 </li>
                                 <li class="main-device-left__list--item1">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/about/img6.png" alt="">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/about/viber_image_2019-11-16_15-14-09(1).png" alt="">
                                 </li>
                                 <li class="main-device-left__list--item2">
                                     <img src="<?php bloginfo('template_directory'); ?>/images/about/img8.png" alt="">

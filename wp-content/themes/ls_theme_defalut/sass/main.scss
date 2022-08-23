@@ -194,20 +194,8 @@
     }
 }
 .top-banner-3 {
-    background-image: url('../images/banner3-1.png');
+    background-image: url('../images/banner3.png');
     @include backgroundImage();
-    position: relative;
-    .banner-title {
-        position: absolute;
-        right: 14rem;
-        top: 18rem;
-        width: 91rem;
-        line-height: 1.2em;
-        font-size: 4rem;
-        font-weight: 600;
-        color: #fff;
-        text-shadow: 0 0.5rem 1rem #a1710f;
-    }
 }
 
 .treatment-result {
