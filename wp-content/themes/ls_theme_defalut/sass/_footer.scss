@@ -165,31 +165,36 @@
     }
     &-bottom {
         background-color: $orange;
-        .footer-title {
-            padding-right: 60%;
-            text-transform: uppercase;
-            padding-top: 3.8rem;
-            padding-bottom: 2.5rem;
-            margin: 0;
-            font-size: 1.75rem;
-            font-family: Gilroy-Bold;
-        }
-        .footer-contact {
-            padding-bottom: 6rem;
-            &-list {
-                list-style: none;
-                padding: 0;
-                &__item {
-                    &--link {
-                        display:block;
-                        color: $black;
-                        margin-bottom: 1.6rem;
-                    }
-                    &--link:hover {
-                        text-decoration: none;
+        &-left {
+            .footer-title {
+                text-transform: uppercase;
+                padding-top: 3.8rem;
+                padding-bottom: 2.5rem;
+                margin: 0;
+                font-size: 1.75rem;
+                font-family: Gilroy-Bold;
+            }
+            .footer-contact {
+                padding-bottom: 6rem;
+                &-list {
+                    list-style: none;
+                    padding: 0;
+                    &__item {
+                        &--link {
+                            display:block;
+                            color: $black;
+                            margin-bottom: 1.6rem;
+                        }
+                        &--link:hover {
+                            text-decoration: none;
+                        }
                     }
                 }
             }
+        }
+        &-right {
+            padding-top: 3.8rem;
+            font-size: 1.8rem;
         }
         &-mobile {
             display: none;

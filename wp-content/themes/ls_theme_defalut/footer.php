@@ -19,8 +19,8 @@ global $ls_options;
                         <div class="interactive-logo d-flex">
                             <a href="<?php echo home_url(); ?>"><img src="<?php echo $ls_options['logo']['url']; ?>" alt=""></a>
                         </div>
-                        <h3 class="interactive-caption">SHYNH BEAUTY luôn nỗ lực không ngừng để đem đến cho
-                            khách hàng nhưng dịch vụ hoàn hảo nhất</h3>
+                        <h3 class="interactive-caption">Dẫn đầu trị mụn uy tín với phác đồ trị liệu cùng chuyên gia tư vấn, 
+                            kê đơn dược mỹ phẩm cho từng làn da khác nhau</h3>
                         <div class="interactive-image d-flex">
                             <img src="<?php bloginfo('template_directory'); ?>/images/footer.jpg" alt="">
                             <div class="footer-top-interactive__share--top d-flex">
@@ -102,23 +102,28 @@ global $ls_options;
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="footer-width">
-            <h3 class="footer-title">SHYNH BEAUTY
-                SPA - Thẩm mỹ viện hàng đầu việt nam
-                với 50 chi nhánh trên
-                toàn quốc</h3>
-            <div class="footer-contact">
-                <ul class="footer-contact-list">
-                    <li class="footer-contact-list__item">
-                        <a class="footer-contact-list__item--link fz16" href="">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
-                    </li>
-                    <li class="footer-contact-list__item">
-                        <a class="footer-contact-list__item--link fz16" href="">Website: <?php echo $ls_options['web']; ?></a>
-                    </li>
-                    <li class="footer-contact-list__item">
-                        <a class="footer-contact-list__item--link fz16" href="">Mail: <?php echo $ls_options['emailft-2']; ?></a>
-                    </li>
-                </ul>
+        <div class="container footer-width">
+            <div class="row">
+            <div class="footer-bottom-left  col-xl-6 col-md-6">
+                <h3 class="footer-title">SHYNH BEAUTY
+                    SPA - Dẫn đầu trị mụn uy tín số 1 Việt Nam</h3>
+                <div class="footer-contact">
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-list__item">
+                            <a class="footer-contact-list__item--link fz16" href="">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
+                        </li>
+                        <li class="footer-contact-list__item">
+                            <a class="footer-contact-list__item--link fz16" href="">Website: <?php echo $ls_options['web']; ?></a>
+                        </li>
+                        <li class="footer-contact-list__item">
+                            <a class="footer-contact-list__item--link fz16" href="">Mail: <?php echo $ls_options['emailft-2']; ?></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-right col-xl-6 col-md-6">
+                Giấy phép kinh doanh tại TP.Hồ Chí Minh
+            </div>
             </div>
         </div>
     </div>
