@@ -1288,8 +1288,7 @@ a:hover {
 .footer-bottom {
   background-color: #ffd00f;
 }
-.footer-bottom .footer-title {
-  padding-right: 60%;
+.footer-bottom-left .footer-title {
   text-transform: uppercase;
   padding-top: 3.8rem;
   padding-bottom: 2.5rem;
@@ -1297,20 +1296,24 @@ a:hover {
   font-size: 1.75rem;
   font-family: Gilroy-Bold;
 }
-.footer-bottom .footer-contact {
+.footer-bottom-left .footer-contact {
   padding-bottom: 6rem;
 }
-.footer-bottom .footer-contact-list {
+.footer-bottom-left .footer-contact-list {
   list-style: none;
   padding: 0;
 }
-.footer-bottom .footer-contact-list__item--link {
+.footer-bottom-left .footer-contact-list__item--link {
   display: block;
   color: #000;
   margin-bottom: 1.6rem;
 }
-.footer-bottom .footer-contact-list__item--link:hover {
+.footer-bottom-left .footer-contact-list__item--link:hover {
   text-decoration: none;
+}
+.footer-bottom-right {
+  padding-top: 3.8rem;
+  font-size: 1.8rem;
 }
 .footer-bottom-mobile {
   display: none;
@@ -10683,6 +10686,11 @@ a:hover {
   right: 0;
 }
 .advise-contact .advise-contact__body .contact-body .contact-body__left .contact-body__column {
+  background-image: url("../images/contact/_Path_.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
   width: 37.6rem;
   height: 26.5rem;
   margin: 1.5rem 0;
