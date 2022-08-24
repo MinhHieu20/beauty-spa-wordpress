@@ -4637,11 +4637,6 @@ a:hover {
   width: 40%;
   margin: 0 auto;
 }
-.booking-forms {
-  display: none;
-  width: 31%;
-  margin: 0 auto;
-}
 .booking-forms-image img {
   width: 7rem;
 }
@@ -4712,6 +4707,108 @@ a:hover {
   border-radius: 2rem;
 }
 .booking-after::after {
+  content: "";
+  position: absolute;
+  top: -5.8rem;
+  width: 43.8rem;
+  height: 5.8rem;
+  background-color: #fef7d9;
+  border-top-left-radius: 150px 100px;
+  border-top-right-radius: 150px 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.result-booking {
+  background-color: #fef7d9;
+  width: 100%;
+  height: 58rem;
+  margin-top: 20rem;
+  position: relative;
+}
+.result-booking-title {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.result-booking-title h2 {
+  font-size: 3.4rem;
+  font-family: Gilroy-Bold;
+}
+.result-booking .booking-forms {
+  width: 31%;
+  margin: 2rem auto 0;
+}
+.result-booking .booking-forms-image img {
+  width: 7rem;
+}
+.result-booking .booking-forms-text p {
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+.result-booking .booking-forms-line {
+  padding: 0rem 8rem;
+}
+.result-booking .booking-forms-client {
+  line-height: 3em;
+}
+.result-booking .booking-forms-client-text {
+  font-size: 3rem;
+}
+.result-booking .booking-forms-client-name {
+  font-size: 3rem;
+}
+.result-booking .booking-forms-time {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.result-booking .booking-forms-thank p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.result-booking .send-repair-btn {
+  margin-top: 3rem !important;
+}
+.result-booking .send-contact__btn {
+  font-size: 1.6rem;
+  padding: 1.5rem 5.2rem;
+  border: none;
+  outline: none;
+  color: #a1710f;
+  background-color: #ffd00f;
+  border-radius: 8rem;
+  font-family: Gilroy-Bold;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: #a1710f;
+  position: relative;
+  margin-top: 1rem;
+  font-family: Gilroy-Bold;
+  border-radius: 2rem;
+  font-size: 2rem;
+  padding: 1rem 4.2rem;
+}
+.result-booking .send-contact__btn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 0;
+  width: 98%;
+  height: 90%;
+  border: 0.2rem dotted #fff;
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+  border-radius: 2rem;
+}
+.result-booking-after::after {
   content: "";
   position: absolute;
   top: -5.8rem;

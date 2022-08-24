@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Trang đặt lịch
+ * Template Name: Trang sửa đặt lịch
  *
  * @package ls_theme
  */
@@ -11,7 +11,7 @@ get_header();
             <img src="<?php bloginfo('template_directory'); ?>/images/about/imgSpa.png" alt="">
         </div>
 
-        <div class="booking">
+        <div class="result-booking">
             <div class="booking-after">
 
             </div>
@@ -48,7 +48,7 @@ get_header();
                     <p>Cảm ơn quý khách hẹn gặp quý khách tại Shynh Beauty Spa</p>
                 </div>
             </div>
-            <button class="btn send-contact__btn send-contact-mobiles">SỬA LỊCH HẸN</button>
+            <button class="btn send-contact__btn send-repair-btn">SỬA LỊCH HẸN</button>
         </div>
 
         <div class="address dp-blockPC">
