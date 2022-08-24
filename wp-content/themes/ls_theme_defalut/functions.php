@@ -170,7 +170,7 @@ function willgroup_init_beauty() {
             'menu_icon'       => 'dashicons-admin-multisite',
             'capability_type' => 'post',
             'public'          => true,
-            'has_archive'     => 'ket-qua-dieu-tri',
+            'has_archive'     => 'danh-muc-ket-qua-dieu-tri',
             'supports' => array(
                 'title',
                 'thumbnail',
@@ -280,7 +280,7 @@ function willgroup_init_tip_beauty() {
             'menu_icon'       => 'dashicons-admin-multisite',
             'capability_type' => 'post',
             'public'          => true,
-            'has_archive'     => 'meo-lam-dep',
+            'has_archive'     => 'danh-muc-meo-lam-dep',
             'supports'        => array(
                 'title',
                 'thumbnail',
