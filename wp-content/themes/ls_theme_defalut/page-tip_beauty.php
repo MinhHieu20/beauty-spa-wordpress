@@ -141,14 +141,14 @@ get_header();
                     <div class="beautify--program__category">
                         <ul class="beautify--program__category--list">
                             <li class="beautify--program__category--list-item">
-                                <a href="" class="beautify--program__category--list-item-link active">tin tức mới
+                                <a class="beautify--program__category--list-item-link active">tin tức mới
                                     nhất</a>
                             </li>
                             <li class="beautify--program__category--list-item">
-                                <a href="" class="beautify--program__category--list-item-link">mẹo làm đẹp</a>
+                                <a class="beautify--program__category--list-item-link">mẹo làm đẹp</a>
                             </li>
                             <li class="beautify--program__category--list-item">
-                                <a href="" class="beautify--program__category--list-item-link">sự kiện chương
+                                <a class="beautify--program__category--list-item-link">sự kiện chương
                                     trình</a>
                             </li>
                         </ul>
@@ -281,7 +281,7 @@ get_header();
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
                             <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name">1900 989 800 (BẤM PHÍM 2)</div>
+                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?> (BẤM PHÍM 2)</div>
                             <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                         </div>
                         <div class="contact-body__column">

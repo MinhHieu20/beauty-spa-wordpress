@@ -343,8 +343,7 @@ a:hover {
   background-color: #fff;
 }
 
-.tips-beautify--category__list--item .active,
-.beautify--program__category--list-item .active {
+.tips-beautify--category__list--item .active {
   color: #000 !important;
 }
 
@@ -1040,6 +1039,10 @@ a:hover {
   outline: none;
   border: none;
 }
+.header-contact-right__tel a {
+  display: inline-block;
+  color: #000;
+}
 .header-contact-right__tel--number {
   text-transform: uppercase;
   font-size: 2.4rem;
@@ -1147,6 +1150,7 @@ a:hover {
   position: absolute;
   top: -17.5rem;
   z-index: 1;
+  text-align: center;
 }
 .footer-top-interactive .interactive-logo img {
   width: 80%;
@@ -1302,6 +1306,10 @@ a:hover {
 
 .mt-10 {
   margin-top: 15rem !important;
+}
+
+.ml-7 {
+  margin-left: 7rem;
 }
 
 .contact-address {
@@ -1503,12 +1511,14 @@ a:hover {
   color: #808080;
   text-transform: uppercase;
   font-size: 2rem;
-  font-family: Gilroy-XBold;
   border-radius: 1rem;
-  padding: 0.7rem 2rem 0.5rem 1rem;
-}
-.beautify--program__category--list-item:nth-child(2) a, .beautify--program__category--list-item:nth-child(3) a {
   font-family: Gilroy-Regular;
+  padding: 0.7rem 2rem 0.5rem 1rem;
+  cursor: pointer;
+}
+.beautify--program__category--list-item-link.active {
+  color: #000 !important;
+  font-family: Gilroy-XBold !important;
 }
 
 .header-contact .moble-image {
@@ -2579,12 +2589,10 @@ a:hover {
   padding-top: 0.5rem;
   text-align: center;
   padding-right: 1rem;
+  color: #000;
 }
 .content .training-col {
   margin-bottom: 6rem;
-}
-.content .address {
-  display: none;
 }
 
 .training-detail {
@@ -4039,7 +4047,7 @@ a:hover {
 }
 .form--register .tab-pane-content .address .location-details,
 .form--contact .tab-pane-content .address .location-details {
-  height: 40rem;
+  height: 49rem;
   overflow: auto;
   background-color: #fff;
   border-radius: 2rem;
@@ -6024,7 +6032,7 @@ a:hover {
     margin-top: 3.8rem;
   }
   .address-info-caption {
-    padding: 0 8%;
+    padding: 0 8% !important;
   }
   .address .address-nav-location {
     justify-content: center;
@@ -10503,6 +10511,9 @@ a:hover {
   font-weight: bold;
   font-size: 1.6rem;
 }
+.event .container-item .container-body .event-list .event-item .event-title a {
+  color: #000;
+}
 .event .container-item .container-body .event-list .event-item .event-desc {
   max-width: 23.4rem;
   font-size: 1.8rem;
@@ -10525,6 +10536,9 @@ a:hover {
   padding: 1.5rem 3.2rem;
   border-radius: 3rem;
   font-family: Gilroy-Medium-Italic;
+}
+.event .container-item .container-footer .btn-exception a {
+  color: #a1710f;
 }
 
 .sale {

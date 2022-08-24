@@ -329,7 +329,7 @@ get_header();
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
                             <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name">1900 0000 00</div>
+                            <div class="contact__name"><?php echo $ls_options['hotline-1']; ?></div>
                             <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm
                                 24/7</div>
                         </div>
@@ -352,7 +352,7 @@ get_header();
                                 <input type="text" class="form-control" placeholder="họ tên">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" placeholder="số điện thoại">
+                                <input type="text" class="form-control" placeholder="số điện thoại">
                             </div>
                             <button class="btn-exception">Gửi ngay</button>
                         </div>

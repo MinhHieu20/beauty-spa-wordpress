@@ -246,6 +246,9 @@
                         text-transform: uppercase;
                         font-weight: bold;
                         font-size: 1.6rem;
+                        a {
+                            color: $black;
+                        }
                     }
                     .event-desc {
                         max-width: 23.4rem;
@@ -265,6 +268,9 @@
                 padding: 1.5rem 3.2rem;
                 border-radius: 3rem;
                 font-family: Gilroy-Medium-Italic;
+                a {
+                    color: #a1710f;
+                }
             }
         }
     }
