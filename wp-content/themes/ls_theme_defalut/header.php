@@ -103,8 +103,8 @@ global $ls_options;
                                     <h3 class="header-cart--notify__info--main-heading">Tổng cộng: 70,000 Đ</h3>
                                 </div>
                                 <div class="header-cart--notify__info--bottom">
-                                    <button class="btn header-cart--notify__info--bottom-view">Xem giỏ hàng</button>
-                                    <button class="btn header-cart--notify__info--bottom-pay">Thang toán</button>
+                                    <button class="btn header-cart--notify__info--bottom-view"><a href="<?php echo home_url(); ?>/gio-hang">Xem giỏ hàng</a></button>
+                                    <button class="btn header-cart--notify__info--bottom-pay"><a href="<?php echo home_url(); ?>/thanh-toan">Thanh toán</a></button>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,9 @@ global $ls_options;
         </div>
         <div class="header-logo">
             <div class="header-logo__page">
+                <?php if( !is_page_template( array( 'page-store.php') ) ) { ?>
                 <a href="<?php echo home_url(); ?>"><img src="<?php echo $ls_options['logo']['url']; ?>" alt=""></a>
+                <?php } ?>
             </div>
         </div>
         <div class="header-main js-mobile-menu">

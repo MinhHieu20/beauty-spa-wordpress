@@ -47,7 +47,7 @@ get_header();
                         </div>
                         <div class="beautify-program-list__item col-lg-4 col-md-4">
                             <a href="./tips-beautify-detail.html">
-                                <div class="beautify-program-list__item--image ">
+                                <div class="beautify-program-list__item--image">
                                     <img src="<?php bloginfo('template_directory'); ?>/images/event/event3.png" alt=""
                                          class="beautify-program-list__item--image--product">
                                 </div>
@@ -116,7 +116,6 @@ get_header();
                                 <p class="beautify-program-list__item--calendar--date">01 Th7</p>
                             </div>
                         </div>
-
                     </div>
                     <div class="product-pagination">
                         <ul class="product-pagination-list d-flex">
@@ -276,15 +275,14 @@ get_header();
         <div class="advise-contact dp-none ">
             <div class="advise-contact__body grid wide">
                 <div class="contact-body row">
-                    <div class="contact-body__left col l-5 col-md-5">
+                    <div class="contact-body__left col l-5">
                         <div class="contact-body__column">
                             <div class="contact-logo">
                                 <img src="<?php bloginfo('template_directory'); ?>/images/contact/call.png" alt="" class="icon__call">
                             </div>
                             <div class="contact__title">Liên hệ hotline</div>
-                            <div class="contact__name">1900 0000 00</div>
-                            <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm
-                                24/7</div>
+                            <div class="contact__name">1900 989 800 (BẤM PHÍM 2)</div>
+                            <div class="contact__desc">Giải đáp tất cả thắc mắc của quý khách hàng, phục vụ tận tâm 24/7</div>
                         </div>
                         <div class="contact-body__column">
                             <div class="contact-logo">
@@ -294,21 +292,13 @@ get_header();
                             <div class="contact__name">Nhận ưu đãi</div>
                             <div class="contact__desc">Đặt ngay lịch hẹn hôm nay để nhận hàng ngàn ưu đãi</div>
                         </div>
-
                     </div>
                     <div class="contact-body__right col l-7 col-md-7">
                         <div class="contact-body__right-heading">
-
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
                         </div>
                         <div class="contact-body__right-info">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="họ tên">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control" placeholder="số điện thoại">
-                            </div>
-                            <button class="btn-exception">Gửi ngay</button>
+                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
                         </div>
                     </div>
                 </div>

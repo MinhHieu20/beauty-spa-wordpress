@@ -87,6 +87,9 @@ function ls_theme_defalut_setup() {
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
+    /* Add WooCommerce support */
+    add_theme_support( 'woocommerce' );
+
 	/**
 	 * Add support for core custom logo.
 	 *
@@ -427,6 +430,7 @@ function willgroup_init_promotion() {
 }
 add_action('init', 'willgroup_init_promotion');
 
+add_filter( 'big_image_size_threshold', '__return_false' );
 /**
  * Truncate text.
  */
