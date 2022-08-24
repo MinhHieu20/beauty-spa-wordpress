@@ -28,21 +28,7 @@ global $ls_options;
                         </div>
                         <div class="contact-address-item__form-contact--group">
                             <h2 class="contact-address-item__form-contact--group--title">Liên hệ với chúng tôi</h2>
-                            <div class="contact-address-item__form-contact--group--info">
-                                <input type="text" class="contact-address-item__form-contact--group--info__control" placeholder="Họ tên">
-                            </div>
-                            <div class="contact-address-item__form-contact--group--info">
-                                <input type="number" class="contact-address-item__form-contact--group--info__control" placeholder="Số điện thoại">
-                            </div>
-                            <div class="contact-address-item__form-contact--group--info">
-                                <input type="email" class="contact-address-item__form-contact--group--info__control" placeholder="Email">
-                            </div>
-                            <div class="contact-address-item__form-contact--group--info">
-                                <textarea name="" class="contact-address-item__form-contact--group--info__textarea" placeholder="Lời nhắn" id="" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="contact-address-item__form-contact--group--info">
-                                <button class="contact-address-item__form-contact--group--info__button">Gửi ngay</button>
-                            </div>
+                            <?php echo apply_shortcodes( '[contact-form-7 id="123" title="Liên hệ"]' ); ?>
                         </div>
                     </div>
                 </div>
@@ -77,13 +63,7 @@ global $ls_options;
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
                         </div>
                         <div class="contact-body__right-info">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="họ tên">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control" placeholder="số điện thoại">
-                            </div>
-                            <button class="btn-exception">Gửi ngay</button>
+                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
                         </div>
                     </div>
                 </div>
@@ -431,7 +411,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Thủ Đức</h4>
                                     <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
                                         ĐH Sư Phạm Kĩ Thuật)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -520,7 +499,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Thủ Đức</h4>
                                     <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
                                         ĐH Sư Phạm Kĩ Thuật)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -535,7 +513,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Quận 7</h4>
                                     <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
                                         (Gần cầu HimLam)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -548,7 +525,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Gò Vấp</h4>
                                     <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
                                         Vấp</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -561,7 +537,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Tân Bình</h4>
                                     <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
                                         Bình</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -583,7 +558,6 @@ global $ls_options;
                                     <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
                                         10 (Vòng Xoay Dân Chủ)
                                     </p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -596,7 +570,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Bình Thạnh</h4>
                                     <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
                                         (Đối Diện Chợ Bà Chiểu)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -609,7 +582,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Thủ Đức</h4>
                                     <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
                                         ĐH Sư Phạm Kĩ Thuật)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -624,7 +596,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Quận 7</h4>
                                     <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
                                         (Gần cầu HimLam)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -637,7 +608,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Gò Vấp</h4>
                                     <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
                                         Vấp</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -650,7 +620,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Tân Bình</h4>
                                     <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
                                         Bình</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -672,7 +641,6 @@ global $ls_options;
                                     <p class="location-details-right__info">375 Nguyễn Thượng Hiền, Phường 11, Quận
                                         10 (Vòng Xoay Dân Chủ)
                                     </p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -685,7 +653,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Bình Thạnh</h4>
                                     <p class="location-details-right__info">380 Bùi Hữu Nghĩa, Phường 2, Bình Thạnh
                                         (Đối Diện Chợ Bà Chiểu)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -698,7 +665,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Thủ Đức</h4>
                                     <p class="location-details-right__info">314 Võ Văn Ngân, Bình Thọ, Thủ Đức (Gần
                                         ĐH Sư Phạm Kĩ Thuật)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -713,7 +679,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Quận 7</h4>
                                     <p class="location-details-right__info">44 Nguyễn Thị Thập, Tân Hưng, Quận 7
                                         (Gần cầu HimLam)</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -726,7 +691,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Gò Vấp</h4>
                                     <p class="location-details-right__info">398 Nguyễn Văn Nghi, Phường 7, Quận Gò
                                         Vấp</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -739,7 +703,6 @@ global $ls_options;
                                     <h4 class="location-details-right__name">Tân Bình</h4>
                                     <p class="location-details-right__info">120 Ni Sư Huỳnh Liên,Phường 10, Quận Tân
                                         Bình</p>
-
                                     <button class="btn location-view">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
@@ -748,7 +711,6 @@ global $ls_options;
                     </div>
                 </div>
             </div>
-
             <div class="address-near dp-none">
                 <button class="btn address-near-btn">Tìm chi nhánh gần bạn</button>
             </div>

@@ -49,21 +49,15 @@
 @import 'responsive-beautify-detail';
 @import 'responsiveEventDetail.scss';
 
-
-
-
-
 .seemore-mobile {
     display: none;
 }
-
 .top-banner {
     .top-banner-1 {
         background-image: url('../images/banner1.png');
         @include backgroundImage();
     }
 }
-
 .container-item {
     .pd-05 {
         padding: 0.5rem;
@@ -129,7 +123,6 @@
         }
     }
 }
-
 .system-introduction {
     align-items: center;
     flex-direction: row-reverse;
@@ -174,7 +167,6 @@
         }
     }
 }
-
 .top-banner-2 {
     background-image: url('../images/banner2.png');
     @include backgroundImage();
@@ -197,11 +189,9 @@
     background-image: url('../images/banner3.png');
     @include backgroundImage();
 }
-
 .treatment-result {
     margin: 0;
 }
-
 .category-nav {
     padding: 0 1.5rem;
     justify-content: center;
@@ -312,7 +302,6 @@
         }
     }
 }
-
 .beauty-store {
     text-align: center;
     margin-top: 0;
@@ -463,7 +452,6 @@
         }
     }
 }
-
 .advise-contact {
     background-image: url('../images/contact.png');
     @include backgroundImage();
@@ -576,7 +564,6 @@
     }
 
 }
-
 .address {
     margin-top: 6.8rem;
     text-align: center;
@@ -727,7 +714,52 @@
         }
     }
 }
+.modal--maps{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    display: none;
+    &--address{
 
+        min-height: 60.38rem;
+        position: relative;
+        animation: showModal ease 0.3s;
+        border-radius: 1rem;
+        &-close{
+            .close-icon{
+                position: absolute;
+                color: #000;
+                right: 0;
+                top: 0;
+                padding: 15px;
+                cursor: pointer;
+                opacity: 0.8;
+                font-size: 1.8rem;
+            }
+            .close-icon:hover{
+                opacity: 1;
+            }
+        }
+        &__search{
+
+            iframe{
+
+                border-radius: 1rem;
+                width: 100%;
+                height: 60.38rem;
+            }
+        }
+    }
+}
+.modal--maps.open{
+    display: flex;
+}
 
             
 

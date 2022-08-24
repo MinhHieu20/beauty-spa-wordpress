@@ -454,7 +454,7 @@ get_header();
                             </div>
                             <div class="event-item-text ">
                                 <h2 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title();  ?></a></h2>
-                                <p class="event-desc"><?php echo get_the_content(); ?></p>
+                                <p class="event-desc"><?php echo get_the_excerpt(); ?></p>
                             </div>
                         </div>
                         <?php
@@ -497,10 +497,8 @@ get_header();
                             <li class="category-item tab-category">
                                 <a class="category-item__link">kem dưỡng trắng da</a>
                             </li>
-
                         </ul>
                     </div>
-
                     <div class="slide-container active swiper">
                         <div class="slide-content">
                             <div class="card-wrapper swiper-wrapper">
@@ -511,7 +509,6 @@ get_header();
                                             <img src="<?php bloginfo('template_directory'); ?>/images/product/img-5.png" alt="" class="card-img">
                                         </div>
                                     </div>
-
                                     <div class="card-content">
                                         <p class="description">Mặt
                                             nạ sợi tre
@@ -1484,15 +1481,7 @@ get_header();
                             <img src="<?php bloginfo('template_directory'); ?>/images/contact/register.png" alt="" class="contact__heading">
                         </div>
                         <div class="contact-body__right-info">
-                            <form action="">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="họ tên">
-                                </div>
-                                <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="số điện thoại">
-                                </div>
-                                <button class="btn-exception">Gửi ngay</button>
-                            </form>
+                            <?php echo apply_shortcodes( '[contact-form-7 id="122" title="Đăng ký nhận thông tin"]' ); ?>
                         </div>
                     </div>
                 </div>
@@ -1536,78 +1525,68 @@ get_header();
             <div class="location-details active">
                 <div class="container container-width">
                     <div class="row location-details-border location-details-mobile">
+                        <?php
+                        $args = array(
+                            'post_type' => 'extension',
+                            'post_status' => 'publish',
+                            'cat_id' => '43',
+                            'posts_per_page' => 6,
+                            'orderby' => 'title',
+                            'order' => 'ASC',
+                        );
+                        $count = 0;
+                        $loop = new WP_Query( $args );
+                        ?>
                         <ul class="location-details-list col-lg-6">
-                            <li class="location-details-list__item row">
-                                <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/viber_image_2022-08-09_11-49-01-314.jpg" alt="" class="">
-                                </div>
-                                <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Quận 3</h4>
-                                    <p class="location-details-right__info">13/5 Kỳ Đồng, Phường 9, Quận 3 </p>
+                        <?php
+                            while ( $loop->have_posts() ) : $loop->the_post();
+                            $post_id = get_the_ID();
+                            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                            if($count %2 == 0) {
+                        ?>
+                        <li class="location-details-list__item row">
+                            <div class="col-lg-4 col-5 location-details-left">
+                                <img src="<?php echo $image[0]; ?>" alt="" class="">
+                            </div>
+                            <div class="col-lg-6 col-7 location-details-right">
+                                <h4 class="location-details-right__name"><?php the_title(); ?></h4>
+                                <p class="location-details-right__info"><?php echo get_the_content(); ?></p>
 
-                                    <button class="btn location-view">Xem địa chỉ</button>
-                                </div>
-                                <div class="col-lg-2"></div>
-                            </li>
-                            <li class="location-details-list__item row">
-                                <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/IMG_0074.JPG" alt="" class="">
-                                </div>
-                                <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Quận 10</h4>
-                                    <p class="location-details-right__info">278/26 Tô Hiến Thành, Phường 15, Quận 10</p>
-                                    <button class="btn location-view">Xem địa chỉ</button>
-                                </div>
-                                <div class="col-lg-2"></div>
-                            </li>
-                            <li class="location-details-list__item row">
-                                <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/FYN_0904.JPG" alt="" class="">
-                                </div>
-                                <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Nam Kỳ Khởi Nghĩa</h4>
-                                    <p class="location-details-right__info">193A/6 Nam Kỳ Khởi Nghĩa, Phường Võ Thị Sáu, Quận 3</p>
-                                    <button class="btn location-view">Xem địa chỉ</button>
-                                </div>
-                                <div class="col-lg-2"></div>
-                            </li>
+                                <button class="btn location-view" id="<?php echo $post_id; ?>">Xem địa chỉ</button>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </li>
+                        <?php
+                            }
+                            $count++;
+                            endwhile;
+                            wp_reset_postdata();
+                        ?>
                         </ul>
                         <ul class="location-details-list col-lg-6">
+                            <?php
+                            while ( $loop->have_posts() ) : $loop->the_post();
+                                $post_id = get_the_ID();
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                                if($count %2 != 0) {
+                            ?>
                             <li class="location-details-list__item row">
                                 <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/NGT_-9646.jpg" alt="" class="">
+                                    <img src="<?php echo $image[0]; ?>" alt="" class="">
                                 </div>
                                 <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Phan Xích Long</h4>
-                                    <p class="location-details-right__info">82 Phan Xích Long, Phường 3, Quận Bình Thạnh</p>
-                                    <button class="btn location-view">Xem địa chỉ</button>
+                                    <h4 class="location-details-right__name"><?php the_title(); ?></h4>
+                                    <p class="location-details-right__info"><?php echo get_the_content(); ?></p>
+                                    <button class="btn location-view" id="<?php echo $post_id; ?>">Xem địa chỉ</button>
                                 </div>
                                 <div class="col-lg-2"></div>
                             </li>
-                            <li class="location-details-list__item row">
-                                <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/NGT_-7083.jpg" alt="" class="">
-                                </div>
-                                <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Nguyễn Gia Trí</h4>
-                                    <p class="location-details-right__info">69/20 Nguyễn Gia Trí (D2 cũ), Phường 25, Quận Bình Thạnh</p>
-
-                                    <button class="btn location-view">Xem địa chỉ</button>
-                                </div>
-                                <div class="col-lg-2"></div>
-                            </li>
-                            <li class="location-details-list__item row">
-                                <div class="col-lg-4 col-5 location-details-left">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/location/FYN_0476.JPG" alt="" class="">
-                                </div>
-                                <div class="col-lg-6 col-7 location-details-right">
-                                    <h4 class="location-details-right__name">Đặng Văn Bi</h4>
-                                    <p class="location-details-right__info">Đường N1, Nhà phố Moonlight, 100E/18 Đặng Văn Bi, Phường Bình Thọ, Thành phố Thủ Đức</p>
-
-                                    <button class="btn location-view">Xem địa chỉ</button>
-                                </div>
-                                <div class="col-lg-2"></div>
-                            </li>
+                            <?php
+                                }
+                            $count++;
+                            endwhile;
+                            wp_reset_postdata();
+                            ?>
                         </ul>
                     </div>
                 </div>

@@ -181,3 +181,25 @@ tabsHeading.forEach((tab, index) => {
   };
 });
 
+// show google maps
+const showBtns = document.querySelectorAll(".location-view");
+const modalMaps = document.querySelector('.modal--maps');
+const modalContainer = document.querySelector(".modal--maps--address");
+const modalClose = document.querySelector('.js-modal-close')
+
+function showModalMaps(){
+  modalMaps.classList.add('open');
+}
+function hideModalMaps(){
+  modalMaps.classList.remove('open');
+}
+
+for(const showBtn of showBtns){
+  showBtn.addEventListener("click", showModalMaps);
+}
+
+modalClose.addEventListener("click", hideModalMaps);
+modalMaps.addEventListener('click', hideModalMaps)
+modalContainer.addEventListener('click', function(e) {
+  e.stopPropagation()
+})

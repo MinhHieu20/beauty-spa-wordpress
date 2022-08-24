@@ -96,6 +96,9 @@ global $ls_options;
                             <li class="footer-top-menu__list">
                                 <a class="footer-top-menu__list--link" href="<?php echo home_url(); ?>/tuyen-dung">Tuyển dụng Shynh Beauty Spa</a>
                             </li>
+                            <li class="footer-top-menu__list">
+                                <a class="footer-top-menu__list--link" href="<?php echo home_url(); ?>/dat-lich">Đặt lịch</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -172,6 +175,7 @@ global $ls_options;
         </div>
     </div>
 </footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
 <div class="form--contact hide">
     <!-- tabs Items -->
     <div class="tabs">
@@ -1300,8 +1304,18 @@ global $ls_options;
         </ul>
     </div>
 </div>
+<div class="modal--maps">
+    <div class="modal--maps--address">
+        <div class="modal--maps--address-close js-modal-close">
+            <i class="close-icon fa-solid fa-xmark"></i>
+        </div>
+        <div class="modal--maps--address__search">
+        </div>
+    </div>
+</div>
 </div><!-- #page -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/swiper-bundle.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 <script>
@@ -1320,6 +1334,41 @@ global $ls_options;
             prevEl: ".swiper-button-prev",
         },
     });
+    (function($){
+        $(document).ready(function(){
+            $('.location-view').click(function(){
+                $id = this.id;
+                $.ajax({
+                    type : "post", //Phương thức truyền post hoặc get
+                    dataType : "json", //Dạng dữ liệu trả về xml, json, script, or html
+                    url : '<?php echo admin_url('admin-ajax.php');?>', //Đường dẫn chứa hàm xử lý dữ liệu. Mặc định của WP như vậy
+                    data : {
+                        action: "thongbao", //Tên action
+                        id : $id,//Biến truyền vào xử lý. $_POST['id']
+                    },
+                    context: this,
+                    beforeSend: function(){
+                        //Làm gì đó trước khi gửi dữ liệu vào xử lý
+                    },
+                    success: function(response) {
+                        //Làm gì đó khi dữ liệu đã được xử lý
+                        if(response.success) {
+                            console.log(response.data);
+                            // $('.modal--maps--address__search').append('<iframe src="' + response.data + '" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">' + '</iframe>');
+                        }
+                        else {
+                            console.log('errors');
+                        }
+                    },
+                    error: function( jqXHR, textStatus, errorThrown ){
+                        //Làm gì đó khi có lỗi xảy ra
+                        console.log( 'The following error occured: ' + textStatus, errorThrown );
+                    }
+                })
+                return false;
+            })
+        })
+    })(jQuery)
 </script>
 <?php wp_footer(); ?>
 </body>
