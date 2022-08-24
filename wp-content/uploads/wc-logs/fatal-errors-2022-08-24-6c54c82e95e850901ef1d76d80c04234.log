@@ -1,0 +1,7 @@
+2022-08-24T08:22:18+00:00 CRITICAL Uncaught RuntimeException: Lỗi lưu hành động: Table 'beauty-spa.wpio_actionscheduler_actions' doesn't exist in D:\xampp\htdocs\beauty-spa-wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:86
+Stack trace:
+#0 D:\xampp\htdocs\beauty-spa-wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(177): ActionScheduler_DBStore->save_action(Object(ActionScheduler_Action))
+#1 D:\xampp\htdocs\beauty-spa-wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_ActionFactory.php(105): ActionScheduler_ActionFactory->store(Object(ActionScheduler_Action))
+#2 D:\xampp\htdocs\beauty-spa-wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\functions.php(54): ActionScheduler_ActionFactory->recurring('woocommerce_cle...', Array, false, 86400, '')
+#3 D:\xampp\htdocs\beauty-spa-wordpress\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Domain\Servic in D:\xampp\htdocs\beauty-spa-wordpress\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php on line 86
+

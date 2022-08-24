@@ -80,6 +80,17 @@ tabRecruit.forEach((tab, index) => {
     pane.classList.add("show");
   };
 });
+
+// //-----------------------------------------------------------------
+const TipBeautyItems = document.querySelectorAll(".beautify--program__category--list-item-link");
+TipBeautyItems.forEach((tab) => {
+  tab.onclick = function () {
+    $(".beautify--program__category--list-item-link.active").classList.remove("active");
+
+    this.classList.add("active");
+  };
+});
+
 // // ----------------------------------------------------------------
 
 const openModalGift = document.getElementById("promotion--detail__btn");

@@ -279,8 +279,7 @@ a:hover {
 .content-container {
   background-color: #fff;
 }
-.tips-beautify--category__list--item .active,
-.beautify--program__category--list-item .active {
+.tips-beautify--category__list--item .active {
   color: $black  !important;
 }
 .header-main-nav__list--item-link .active,
@@ -295,6 +294,7 @@ a:hover {
 .show {
   display: block !important;
 }
+
 
 .mobile-menu-overlay {
   position: fixed;

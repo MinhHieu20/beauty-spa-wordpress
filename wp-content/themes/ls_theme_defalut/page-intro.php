@@ -333,7 +333,7 @@ global $ls_options;
                                     <input type="text" class="form-control" placeholder="họ tên">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="số điện thoại">
+                                    <input type="text" class="form-control" placeholder="số điện thoại">
                                 </div>
                                 <button class="btn-exception">Gửi ngay</button>
                             </form>
