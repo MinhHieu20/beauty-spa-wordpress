@@ -132,6 +132,10 @@
             // width: 37rem;
             outline: none;
             border: none;
+            a {
+                display: inline-block;
+                color: $black;
+            }
 
             &--number {
                 text-transform: uppercase;
