@@ -263,7 +263,7 @@ function willgroup_init_event_spa() {
 add_action('init', 'willgroup_init_event_spa');
 
 function willgroup_init_tip_beauty() {
-    register_post_type('tip-beauty',
+    register_post_type('tip_beauty',
         array(
             'labels' => array(
                 'name'            => __('Mẹo làm đẹp', 'LeadSoft') ,
@@ -292,7 +292,7 @@ function willgroup_init_tip_beauty() {
         )
     );
     flush_rewrite_rules();
-    register_taxonomy('tip_beauty_cat', array('tip-beauty') ,
+    register_taxonomy('tip_beauty_cat', array('tip_beauty') ,
         array(
             'labels' => array(
                 'name'              => __('Phân Loại Mẹo làm đẹp', 'LeadSoft') ,
