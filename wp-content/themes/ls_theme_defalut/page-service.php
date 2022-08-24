@@ -120,7 +120,7 @@ get_header();
                                             <input type="email" class="form-control" placeholder="Email">
                                         </div>
                                         <div class="form-group col l-6">
-                                            <input type="number" class="form-control" placeholder="Số Điện Thoại">
+                                            <input type="text" class="form-control" placeholder="Số Điện Thoại">
                                         </div>
 
                                     </div>

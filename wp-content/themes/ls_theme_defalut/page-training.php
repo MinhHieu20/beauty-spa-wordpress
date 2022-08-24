@@ -36,13 +36,15 @@ get_header();
             </div>
             <div class="row content-product content-product-training">
                 <div class="col-lg-3 col-6 pd-05 training-col">
-                    <div class="content-product-training__image">
-                        <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/7.png" alt="">
-                    </div>
-                    <div class="content-product-courses">
-                        <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-06.png" alt="">
-                        <p class="content-product-courses__text">KHÓA ĐÀO TẠO ĐIỀU TRỊ MỤN</p>
-                    </div>
+                   <a href="./training-detail.html">
+                        <div class="content-product-training__image">
+                            <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/7.png" alt="">
+                        </div>
+                        <div class="content-product-courses">
+                            <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-06.png" alt="">
+                            <p class="content-product-courses__text">KHÓA ĐÀO TẠO ĐIỀU TRỊ MỤN</p>
+                        </div>
+                   </a>
                 </div>
 
                 <div class="col-lg-3 col-6 pd-05">
@@ -118,63 +120,75 @@ get_header();
                 </div>
 
                 <div class="col-lg-3 col-6 pd-05">
-                    <div class="content-product-training__image">
-                        <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/14.png" alt="">
-                    </div>
-                    <div class="content-product-courses">
-                        <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-13.png" alt="">
-                        <p class="content-product-courses__text">KHÓA ĐÀO TẠO PHUN XĂM THẨM MỸ</p>
-                    </div>
+                    <a href="./training-detail.html">
+                        <div class="content-product-training__image">
+                            <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/14.png" alt="">
+                        </div>
+                        <div class="content-product-courses">
+                            <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-13.png" alt="">
+                            <p class="content-product-courses__text">KHÓA ĐÀO TẠO PHUN XĂM THẨM MỸ</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-6 pd-05">
-                    <div class="content-product-training__image">
-                        <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/10.png" alt="">
-                    </div>
-                    <div class="content-product-courses">
-                        <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-08.png" alt="">
-                        <p class="content-product-courses__text">KHÓA ĐÀO TẠO GỘI ĐẦU</p>
-                    </div>
+                    <a href="">
+                        <div class="content-product-training__image">
+                            <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/10.png" alt="">
+                        </div>
+                        <div class="content-product-courses">
+                            <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-08.png" alt="">
+                            <p class="content-product-courses__text">KHÓA ĐÀO TẠO GỘI ĐẦU</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-6 pd-05">
-                    <div class="content-product-training__image">
-                        <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/11.png" alt="">
-                    </div>
-                    <div class="content-product-courses">
-                        <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-10.png" alt="">
-                        <p class="content-product-courses__text">KHÓA ĐÀO TẠO TRIỆT LÔNG</p>
-                    </div>
+                    <a href="./training-detail.html">
+                        <div class="content-product-training__image">
+                            <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/11.png" alt="">
+                        </div>
+                        <div class="content-product-courses">
+                            <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-10.png" alt="">
+                            <p class="content-product-courses__text">KHÓA ĐÀO TẠO TRIỆT LÔNG</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-6 pd-05">
-                    <div class="content-product-training__image">
-                        <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/12.png" alt="">
-                    </div>
-                    <div class="content-product-courses">
-                        <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-11.png" alt="">
-                        <p class="content-product-courses__text">KHÓA ĐÀO TẠO TẮM TRẮNG</p>
-                    </div>
+                    <a href="./training-detail.html">
+                        <div class="content-product-training__image">
+                            <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/12.png" alt="">
+                        </div>
+                        <div class="content-product-courses">
+                            <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-11.png" alt="">
+                            <p class="content-product-courses__text">KHÓA ĐÀO TẠO TẮM TRẮNG</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-6 pd-05">
-                    <div class="content-product-training__image">
-                        <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/13.png" alt="">
-                    </div>
-                    <div class="content-product-courses">
-                        <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-12.png" alt="">
-                        <p class="content-product-courses__text">KHÓA ĐÀO TẠO MASSAGE</p>
-                    </div>
+                    <a href="./training-detail.html">
+                        <div class="content-product-training__image">
+                            <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/13.png" alt="">
+                        </div>
+                        <div class="content-product-courses">
+                            <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-12.png" alt="">
+                            <p class="content-product-courses__text">KHÓA ĐÀO TẠO MASSAGE</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-6 pd-05">
-                    <div class="content-product-training__image">
-                        <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/14.png" alt="">
-                    </div>
-                    <div class="content-product-courses">
-                        <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-13.png" alt="">
-                        <p class="content-product-courses__text">KHÓA ĐÀO TẠO PHUN XĂM THẨM MỸ</p>
-                    </div>
+                    <a href="./training-detail.html">
+                        <div class="content-product-training__image">
+                            <img class="content-product-image" src="<?php bloginfo('template_directory'); ?>/images/subject_training/14.png" alt="">
+                        </div>
+                        <div class="content-product-courses">
+                            <img class="content-product-courses__icon" src="<?php bloginfo('template_directory'); ?>/images/icon/icon-13.png" alt="">
+                            <p class="content-product-courses__text">KHÓA ĐÀO TẠO PHUN XĂM THẨM MỸ</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="container-body container-body-training">
@@ -248,7 +262,7 @@ get_header();
                                     <input type="text" class="form-control" placeholder="họ tên">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="số điện thoại">
+                                    <input type="text" class="form-control" placeholder="số điện thoại">
                                 </div>
                                 <button class="btn-exception">Gửi ngay</button>
                             </form>

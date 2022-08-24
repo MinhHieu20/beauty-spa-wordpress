@@ -49,8 +49,7 @@ global $ls_options;
                     <div class="footer-top-contact">
                         <div class="footer-top-contact__tel">
                             <h3 class="contact-title"> HOTLINE </h3>
-                            <a href="#"><?php echo $ls_options['hotline-1']; ?> - <?php echo $ls_options['hotline-2']; ?></a>
-                            <a href="">1900 989 800 (BẤM PHÍM 2) </a>
+                            <a href="tel:<?php echo $ls_options['hotline-1']; ?>"><?php echo $ls_options['hotline-1']; ?> - <?php echo $ls_options['hotline-2']; ?></a>
                         </div>
                         <div class="footer-top-contact__info">
                             <h3 class="contact-title"> Thông tin liên hệ
@@ -115,7 +114,6 @@ global $ls_options;
                     <ul class="footer-contact-list">
                         <li class="footer-contact-list__item">
                             <a class="footer-contact-list__item--link fz16" href="tel:<?php echo $ls_options['hotline-1']; ?>">Hotline: <?php echo $ls_options['hotline-1']; ?></a>
-                            <a class="footer-contact-list__item--link fz16" href="tel:<?php echo $ls_options['hotline-1']; ?>"> <?php echo $ls_options['hotline-1']; ?> (BẤM PHÍM 2)</a>
                         </li>
                         <li class="footer-contact-list__item">
                             <a class="footer-contact-list__item--link fz16" href="https://shynhbeauty.com.vn" target="_blank">Website: <?php echo $ls_options['web']; ?></a>
@@ -212,7 +210,7 @@ global $ls_options;
                             <input type="email" placeholder="Email" class="form-control">
                         </div>
                         <div class="form--contact__inner--contact--form-group form-group col l-6">
-                            <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                            <input type="text" placeholder="Số Điện Thoại" class="form-control">
                         </div>
                     </div>
                     <div class="form--contact__inner--contact--form row">
@@ -1058,7 +1056,7 @@ global $ls_options;
                             <input type="email" placeholder="Email" class="form-control">
                         </div>
                         <div class="form--appointment__inner--appointment--form-group form-group col l-6">
-                            <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                            <input type="text" placeholder="Số Điện Thoại" class="form-control">
                         </div>
                     </div>
                     <div class="form--appointment__inner--appointment--form row">
@@ -1201,7 +1199,7 @@ global $ls_options;
                         <input type="email" placeholder="Email" class="form-control">
                     </div>
                     <div class="form--advise__inner--advise--form-group form-group col l-6">
-                        <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                        <input type="text" placeholder="Số Điện Thoại" class="form-control">
                     </div>
                 </div>
                 <div class="form--advise__inner--advise--form row">
@@ -1257,7 +1255,7 @@ global $ls_options;
                         <input type="email" placeholder="Email" class="form-control">
                     </div>
                     <div class="form--contact__inner--contact--form-group form-group col l-6">
-                        <input type="number" placeholder="Số Điện Thoại" class="form-control">
+                        <input type="text" placeholder="Số Điện Thoại" class="form-control">
                     </div>
                 </div>
                 <div class="form--contact__inner--contact--form row">
