@@ -1309,7 +1309,6 @@ global $ls_options;
             <i class="close-icon fa-solid fa-xmark"></i>
         </div>
         <div class="modal--maps--address__search">
-            <iframe src="<?php echo get_field('maps',130); ?>" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </div>
@@ -1334,41 +1333,41 @@ global $ls_options;
             prevEl: ".swiper-button-prev",
         },
     });
-    //(function($){
-    //    $(document).ready(function(){
-    //        $('.location-view').click(function(){
-    //            $id = this.id;
-    //            $.ajax({
-    //                type : "post", //Phương thức truyền post hoặc get
-    //                dataType : "json", //Dạng dữ liệu trả về xml, json, script, or html
-    //                url : '<?php //echo admin_url('admin-ajax.php');?>//', //Đường dẫn chứa hàm xử lý dữ liệu. Mặc định của WP như vậy
-    //                data : {
-    //                    action: "thongbao", //Tên action
-    //                    id : $id,//Biến truyền vào xử lý. $_POST['id']
-    //                },
-    //                context: this,
-    //                beforeSend: function(){
-    //                    //Làm gì đó trước khi gửi dữ liệu vào xử lý
-    //                },
-    //                success: function(response) {
-    //                    //Làm gì đó khi dữ liệu đã được xử lý
-    //                    if(response.success) {
-    //                        alert(response.data);
-    //                        // $('.modal--maps--address__search').append('<iframe src="' + response.data + '" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">' + '</iframe>');
-    //                    }
-    //                    else {
-    //                        console.log('errors');
-    //                    }
-    //                },
-    //                error: function( jqXHR, textStatus, errorThrown ){
-    //                    //Làm gì đó khi có lỗi xảy ra
-    //                    console.log( 'The following error occured: ' + textStatus, errorThrown );
-    //                }
-    //            })
-    //            return false;
-    //        })
-    //    })
-    //})(jQuery)
+    (function($){
+        $(document).ready(function(){
+            $('.location-view').click(function(){
+                $id = this.id;
+                $.ajax({
+                    type : "post", //Phương thức truyền post hoặc get
+                    dataType : "json", //Dạng dữ liệu trả về xml, json, script, or html
+                    url : '<?php echo admin_url('admin-ajax.php');?>', //Đường dẫn chứa hàm xử lý dữ liệu. Mặc định của WP như vậy
+                    // url : ajax.ajax_url,
+                    data : {
+                        action: "maps", //Tên action
+                        id : $id,//Biến truyền vào xử lý. $_POST['id']
+                    },
+                    context: this,
+                    beforeSend: function(){
+                        //Làm gì đó trước khi gửi dữ liệu vào xử lý
+                    },
+                    success: function(response) {
+                        //Làm gì đó khi dữ liệu đã được xử lý
+                        if(response.success) {
+                            $('.modal--maps--address__search').append('<iframe src="' + response.data + '" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">' + '</iframe>');
+                        }
+                        else {
+                            console.log('errors');
+                        }
+                    },
+                    error: function( jqXHR, textStatus, errorThrown ){
+                        //Làm gì đó khi có lỗi xảy ra
+                        console.log( 'The following error occured: ' + textStatus, errorThrown );
+                    }
+                })
+                return false;
+            })
+        })
+    })(jQuery)
 </script>
 <?php wp_footer(); ?>
 </body>
