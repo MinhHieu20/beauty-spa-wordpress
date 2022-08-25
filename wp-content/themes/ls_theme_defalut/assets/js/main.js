@@ -129,7 +129,7 @@ mobileOverlay.addEventListener("click", () => {
 // slider
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
-  spaceBetween: 25,
+  spaceBetween: 20,
   loop: true,
   centerSlide: "true",
   fade: "true",

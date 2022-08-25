@@ -535,7 +535,7 @@ get_header();
                     <h2 class="container-item-title">shynh beauty store</h2>
 
                 </div>
-                <div class="container-body ">
+                <div class="container-body">
                     <div class="store-category">
                         <ul class="category-list row">
                             <li class="category-item tab-category active">
@@ -566,15 +566,9 @@ get_header();
                                         </div>
                                     </div>
                                     <div class="card-content">
-                                        <p class="description">Mặt
-                                            nạ sợi tre
-                                            bamboo Dưỡng
-                                            ẩm da, mịn
-                                            màng SHINEE.
-                                        </p>
+                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
                                         <div class="money">
-                                            <h2 class="price">70
-                                                000đ</h2>
+                                            <h2 class="price">70.000đ</h2>
                                             <button class="button">
                                                 <img src="<?php bloginfo('template_directory'); ?>/images/add.png" alt="" class="add-cart" />
                                             </button>
@@ -588,10 +582,8 @@ get_header();
                                             <img src="<?php bloginfo('template_directory'); ?>/images/product/img-6.png" alt="" class="card-img">
                                         </div>
                                     </div>
-
                                     <div class="card-content">
-                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.
-                                        </p>
+                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
                                         <div class="money">
                                             <h2 class="price">70 000đ</h2>
                                             <button class="button">
@@ -609,8 +601,7 @@ get_header();
                                     </div>
 
                                     <div class="card-content">
-                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.
-                                        </p>
+                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
                                         <div class="money">
                                             <h2 class="price">70 000đ</h2>
                                             <button class="button">
@@ -626,10 +617,8 @@ get_header();
                                             <img src="<?php bloginfo('template_directory'); ?>/images/product/img-8.png" alt="" class="card-img">
                                         </div>
                                     </div>
-
                                     <div class="card-content">
-                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.
-                                        </p>
+                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
                                         <div class="money">
                                             <h2 class="price">70 000đ</h2>
                                             <button class="button">
@@ -645,10 +634,8 @@ get_header();
                                             <img src="<?php bloginfo('template_directory'); ?>/images/product/img-9.png" alt="" class="card-img">
                                         </div>
                                     </div>
-
                                     <div class="card-content">
-                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.
-                                        </p>
+                                        <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.</p>
                                         <div class="money">
                                             <h2 class="price">70 000đ</h2>
                                             <button class="button">
@@ -664,7 +651,6 @@ get_header();
                                             <img src="<?php bloginfo('template_directory'); ?>/images/product/img-10.png" alt="" class="card-img">
                                         </div>
                                     </div>
-
                                     <div class="card-content">
                                         <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.
                                         </p>
@@ -683,7 +669,6 @@ get_header();
                                             <img src="<?php bloginfo('template_directory'); ?>/images/product/img-11.png" alt="" class="card-img">
                                         </div>
                                     </div>
-
                                     <div class="card-content">
                                         <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.
                                         </p>
@@ -702,7 +687,6 @@ get_header();
                                             <img src="<?php bloginfo('template_directory'); ?>/images/product/img-12.png" alt="" class="card-img">
                                         </div>
                                     </div>
-
                                     <div class="card-content">
                                         <p class="description">Mặt nạ sợi tre bamboo Dưỡng ẩm da, mịn màng SHINEE.
                                         </p>
@@ -735,7 +719,6 @@ get_header();
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-button-next swiper-navBtn">
                             <img class="swiper-icon" src="<?php bloginfo('template_directory'); ?>/images/service/arrow-right.png" alt="">
                         </div>
