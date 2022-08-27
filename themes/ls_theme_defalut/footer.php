@@ -1291,12 +1291,9 @@ global $ls_options;
     </div>
     <div class="form--contact__inner--extend contact_inner-mobile--extend">
         <ul class="form--contact__inner--extend--list">
-            <li class="form--contact__inner--extend--list--item"><i
-                        class="icon-extend fa-solid fa-location-dot"></i>Chi nhánh</li>
-            <li class="form--contact__inner--extend--list--item"><i
-                        class="icon-extend fa-solid fa-headset"></i>Tư vấn</li>
-            <li class="form--contact__inner--extend--list--item"><i
-                        class="icon-extend fa-solid fa-calendar-days"></i>Đặt lịch</li>
+            <li class="form--contact__inner--extend--list--item"><i class="icon-extend fa-solid fa-location-dot"></i>Chi nhánh</li>
+            <li class="form--contact__inner--extend--list--item"><i class="icon-extend fa-solid fa-headset"></i>Tư vấn</li>
+            <li class="form--contact__inner--extend--list--item"><i class="icon-extend fa-solid fa-calendar-days"></i>Đặt lịch</li>
 
         </ul>
     </div>
@@ -1347,6 +1344,7 @@ global $ls_options;
                     context: this,
                     beforeSend: function(){
                         //Làm gì đó trước khi gửi dữ liệu vào xử lý
+                        $('.modal--maps--address__search').empty();
                     },
                     success: function(response) {
                         //Làm gì đó khi dữ liệu đã được xử lý
